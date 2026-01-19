@@ -206,13 +206,13 @@
                     {@html generateParagraph(paragraph)}
                 {/each}
                 {#if isOverflown}
-                    <div class="fade">
-                        <div class="fadeTop" />
-                        <div class="fadeBottom" />
-                    </div>
+                <div class="fade">
+  <div class="fadeTop"></div>
+  <div class="fadeBottom"></div>
+</div>
                 {/if}
             </div>
-            
+
             <div class="viewFull">
                 <a class="button" href="/blog/{id}">View Full Post</a>
             </div>
