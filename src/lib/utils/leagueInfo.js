@@ -1,6 +1,6 @@
 /*   STEP 1   */
-export const leagueID = "your_league_id"; // your league ID
-export const leagueName = "your_league_name"; // your league name
+export const leagueID = "1312164612610723840"; // your league ID
+export const leagueName = "Wizards only"; // your league name
 export const dues = 100; // (optional) used in template constitution page
 export const dynasty = true; // true for dynasty leagues, false for redraft and keeper
 export const enableBlog = false; // requires VITE_CONTENTFUL_ACCESS_TOKEN and VITE_CONTENTFUL_SPACE environment variables
@@ -92,15 +92,15 @@ export const managers = [
     //   "preferredContact": "Text", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     // },
   ]
-  
-  
+
+
   /*   !!  !!  IMPORTANT  !!  !! */
   /*
   Below is the most up to-date version of a manager. Please leave this commented out
   and don't delete it. This will be updated if any fields are added, removed or changed
   and will allow updates without causing merge conflicts
   */
-  
+
     // {
     //   "roster": 3,  // (DEPRECATED! Don't use this anymore) ID of the roster that the manager manages (look at the order of the power rankings graph)
     //   "managerID": "12345678",  // the user's manager ID, go to https://api.sleeper.app/v1/league/<your_league_id>/users to find user IDs (you can use older leagueIDs to find user IDs for managers that are no longer in the league)
@@ -124,4 +124,3 @@ export const managers = [
     //   "tradingScale": 10, // 1 - 10 (optional)
     //   "preferredContact": "Text",  // (optional) 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     // },
-    
