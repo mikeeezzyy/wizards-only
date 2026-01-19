@@ -56,6 +56,9 @@
   },
   "type": "module",
   "dependencies": {
+    "@material/dom": "^14.0.0",
+    "@material/theme": "^14.0.0",
+    "@material/typography": "^14.0.0",
     "@vercel/analytics": "^1.4.1",
     "contentful": "^10.6.7",
     "contentful-management": "^10.46.4",
