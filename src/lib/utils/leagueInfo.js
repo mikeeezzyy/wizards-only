@@ -1,21 +1,16 @@
 /*   STEP 1   */
 export const leagueID = "1312164612610723840"; // your league ID
-export const leagueName = "Wizards only"; // your league name
+export const leagueName = "Wizards Only"; // your league name
 export const dues = 100; // (optional) used in template constitution page
 export const dynasty = true; // true for dynasty leagues, false for redraft and keeper
 export const enableBlog = false; // requires VITE_CONTENTFUL_ACCESS_TOKEN and VITE_CONTENTFUL_SPACE environment variables
 
 /*   STEP 2   */
 export const homepageText = `
-  <p>Wizards Only Fantasy League
-
-The Wizards Only Fantasy League is a competitive, Chicago-based league with strong University of Kentucky ties. The league is built around active management, consistency, and accountability across the entire season.
-
-The most recent championship was won by The Fighting Lil Jonahs, managed by Dylan. The last-place finisher, The Tax Evaders, managed by Mikey, completed the league punishment by wearing a Lorax costume to a Cubs game. The punishment is enforced and serves as a reminder that every matchup matters.
-
-League members are expected to draft deliberately, manage rosters throughout the season, and remain engaged from opening week through the final standings. Waiver decisions, trades, and long-term planning are central to success.
-
-The goal each season is simple: compete seriously, finish strong, and avoid last place.
+  <p>Welcome to Wizards Only<p>
+  <p> The 2025 season recently came to a dramatic close as the Fighting LIl Jonahs took down Thoy in the league championship to become the 2025 Wizard Champion. We also saw an epic battle in this year's Lorax Bowl, as Ryne slid by undamaged, leaving Mikey to be crowned as the 2025 Lorax.<p>
+  <p> The Lorax Ceremony will take place this upcoming summer at a Chicago Cubs game (date TBD). Many wizards shall attend and reminice on our memorable 2025 journey, and begin to strategize for the upcoming 2026 season.<p>
+  <p> As a reminder to all, this page will serve as your League Hub. Stay tuned for league news and updates on the upcoming 2026 season.<p>
 `;
 
 /*   STEP 3   */
