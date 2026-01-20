@@ -7,12 +7,15 @@ export const enableBlog = false; // requires VITE_CONTENTFUL_ACCESS_TOKEN and VI
 
 /*   STEP 2   */
 export const homepageText = `
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p>Wizards Only Fantasy League
+
+The Wizards Only Fantasy League is a competitive, Chicago-based league with strong University of Kentucky ties. The league is built around active management, consistency, and accountability across the entire season.
+
+The most recent championship was won by The Fighting Lil Jonahs, managed by Dylan. The last-place finisher, The Tax Evaders, managed by Mikey, completed the league punishment by wearing a Lorax costume to a Cubs game. The punishment is enforced and serves as a reminder that every matchup matters.
+
+League members are expected to draft deliberately, manage rosters throughout the season, and remain engaged from opening week through the final standings. Waiver decisions, trades, and long-term planning are central to success.
+
+The goal each season is simple: compete seriously, finish strong, and avoid last place.
 `;
 
 /*   STEP 3   */
