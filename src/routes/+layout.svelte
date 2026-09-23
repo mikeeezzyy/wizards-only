@@ -9,6 +9,7 @@
 	const navItems = [
 	  { label: 'Home', href: '/', icon: '🏈' },
 	  { label: 'Matchups', href: '/matchups', icon: '🏈' },
+	  { label: 'Rosters', href: '/rosters', icon: '🏈' },
 	  { label: 'Rivalry', href: '/rivalry', icon: '🏈' },
 	  { label: 'Power Rankings', href: '/power-rankings', icon: '🏈' },
 	  { label: 'League Standings', href: '/standings', icon: '🏈' },
