@@ -110,13 +110,13 @@ export const POWER_RANKINGS = {
 				rank: 1,
 				previousRank: 1,
 				team: 'connorbrannick',
-				commentary: 'Write your Week 2 commentary here.'
+				commentary: "Dominant performance in back to back weeks for Connor. He appears to be picking up right where he left off last regular season. No doubt this team has talent, but idk if we can take them serious after last year's playoff flop."
 			},
 			{
 				rank: 2,
 				previousRank: 2,
 				team: 'Tax Evasion',
-				commentary: 'Write your Week 2 commentary here.'
+				commentary: "I used to pray for times like this, to rhyme like this So I had to grind like that to shine like this In a matter of time I spent on some locked-up shit In the back of the paddy wagon, cuffs locked on wrists Seen my dreams unfold, nightmares come true It was time to marry the game and I said, Yeah, I do. If you want it, you gotta see it with a clear-eyed view Got a shorty, she tryna bless me like I said achoo"
 			},
 			{
 				rank: 3,
