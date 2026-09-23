@@ -1183,6 +1183,7 @@
 		</div>
 
 
+		{#key week}
 		<div class="rankings-grid">
 
 			{#each selectedData.rankings as ranking, index}
@@ -1580,6 +1581,7 @@
 			{/each}
 
 		</div>
+		{/key}
 
 
 		<div
