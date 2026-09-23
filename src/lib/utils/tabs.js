@@ -14,11 +14,17 @@ export const tabs = [
         key: 'matchups',
     },
     {
-        icon: 'swap_horiz',
-        label: 'Trades & Waivers',
-        dest: '/transactions',
-        key: 'transactions',
+        icon: 'leaderboard',
+        label: 'Standings',
+        dest: '/standings',
+        key: 'standings',
     },
+    {
+    icon: 'local_fire_department',
+    label: 'Rivalry',
+    dest: '/rivalry',
+    key: 'rivalry',
+},
     {
         icon: 'article',
         label: 'Blog',
@@ -45,11 +51,6 @@ export const tabs = [
                 icon: 'local_fire_department',
                 label: 'Rivalry',
                 dest: '/rivalry',
-            },
-            {
-                icon: 'leaderboard',
-                label: 'Standings',
-                dest: '/standings',
             },
             {
                 icon: 'view_comfy',

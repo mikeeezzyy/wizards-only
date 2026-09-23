@@ -1,156 +1,275 @@
 <script>
-	import { goto } from "$app/navigation";
-	import { getTeamData } from "$lib/utils/helperFunctions/universalFunctions";
+    import { goto } from "$app/navigation";
+    import { getTeamData } from "$lib/utils/helperFunctions/universalFunctions";
 
     export let playerOne, playerTwo, leagueTeamManagers;
 
     const users = Object.keys(leagueTeamManagers.users);
 
-    $: usersOne = users.filter(u => u !== playerTwo);
-    $: usersTwo = users.filter(u => u !== playerOne);
+    $: usersOne = users.filter((u) => u !== playerTwo);
+    $: usersTwo = users.filter((u) => u !== playerOne);
 
     const analyzeRivalry = (p1, p2) => {
-        if(!p1 || !p2) {
+        if (!p1 || !p2) {
             return;
         }
-        goto(`/rivalry?player_one=${p1}&player_two=${p2}`, {noscroll: true,  keepfocus: true})
-    }
 
-    $: analyzeRivalry(playerOne, playerTwo)
+        goto(
+            `/rivalry?player_one=${p1}&player_two=${p2}`,
+            {
+                noscroll: true,
+                keepfocus: true
+            }
+        );
+    };
+
+    $: analyzeRivalry(playerOne, playerTwo);
 </script>
 
 <style>
     .selectors {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
-        max-width: 900px;
-        margin: 3em auto 2em;
+        gap: 28px;
+        width: 100%;
+        max-width: 950px;
+        margin: 10px auto 18px;
     }
+
     .manager {
+        flex: 1;
+        max-width: 330px;
         text-align: center;
     }
-    .vs {
-        display: inline-block;
-        margin: 1em 0;
-    }
+
     .container {
-        display: inline-block;
         position: relative;
+        width: 100%;
     }
+
     .selectInput {
-        padding: 0.5em 2em;
-        font-size: 1.2em;
-        border-radius: 6px;
-        background-color: var(--fff);
+        box-sizing: border-box;
+        width: 100%;
+        min-height: 58px;
+        padding: 12px 48px;
+        border-radius: 18px;
+        font-family: "Roboto", sans-serif;
+        font-size: 1rem;
+        font-weight: 700;
+        text-align: center;
+        color: var(--wizard-text, #10182f);
+        background-color: rgba(255, 255, 255, 0.96);
         appearance: none !important;
         -webkit-appearance: none !important;
         -moz-appearance: none !important;
-        background-image: url(/dropdown.png);
+        background-image: url("/dropdown.png");
         background-repeat: no-repeat;
-        text-align: center;
-        color: var(--g000);
+        background-size: 18px;
+        box-shadow: 0 8px 24px rgba(30, 64, 175, 0.1);
+        transition:
+            border-color 0.15s ease,
+            box-shadow 0.15s ease,
+            transform 0.15s ease;
+        cursor: pointer;
     }
+
+    .selectInput:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 10px 28px rgba(30, 64, 175, 0.14);
+    }
+
+    .selectInput:focus {
+        outline: none;
+        transform: translateY(-1px);
+    }
+
     .left {
-        border: 1px solid var(--barChartOne);
-        background-position: 100%;
+        border: 2px solid var(--wizard-purple, #6d28d9);
+        background-position: right 16px center;
+        text-align: left;
+        padding-left: 54px;
     }
+
     select.left:focus {
-        outline: none;
-        border: 3px solid var(--barChartOne);
+        border-color: var(--wizard-blue, #29b6f6);
+        box-shadow: 0 0 0 4px rgba(41, 182, 246, 0.12);
     }
+
     .right {
-        border: 1px solid var(--barChartSix);
-        background-position: 0%;
+        border: 2px solid var(--wizard-blue, #29b6f6);
+        background-position: right 16px center;
+        text-align: right;
+        padding-right: 54px;
     }
+
     select.right:focus {
-        outline: none;
-        border: 3px solid var(--barChartSix);
+        border-color: var(--wizard-purple, #6d28d9);
+        box-shadow: 0 0 0 4px rgba(109, 40, 217, 0.12);
     }
+
     select option {
         text-align: left;
     }
-    .avatar {
-        width: 60px;
-        height: 60px;
+
+    .vs {
+        flex: 0 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 54px;
+        height: 54px;
         border-radius: 50%;
-        border: 2px solid;
+        background: linear-gradient(
+            135deg,
+            var(--wizard-purple, #6d28d9),
+            var(--wizard-blue, #29b6f6)
+        );
+        color: white;
+        font-family: "Permanent Marker", cursive;
+        font-size: 1.35rem;
+        box-shadow: 0 8px 22px rgba(109, 40, 217, 0.22);
+        z-index: 2;
+    }
+
+    .avatar {
         position: absolute;
-        transform: translate(0%, -50%);
         top: 50%;
-        background-color: var(--fff);
+        width: 62px;
+        height: 62px;
+        object-fit: cover;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        background: white;
+        box-shadow: 0 6px 18px rgba(30, 64, 175, 0.18);
+        z-index: 3;
     }
+
     .avatarLeft {
-        border-color: var(--barChartOne);
-        border-right: none;
-        left: -18%
+        left: -31px;
+        border: 4px solid var(--wizard-purple, #6d28d9);
     }
+
     .avatarRight {
-        border-color: var(--barChartSix);
-        border-left: none;
-        right: -18%
+        right: -31px;
+        border: 4px solid var(--wizard-blue, #29b6f6);
     }
-    @media (max-width: 650px) {
-        label {
-            font-size: 1.3em;
+
+    @media (max-width: 700px) {
+        .selectors {
+            gap: 14px;
         }
+
         .selectInput {
-            padding: 0.3em 1.9em;
-            font-size: 1em;
+            min-height: 52px;
+            padding-left: 44px;
+            padding-right: 44px;
+            font-size: 0.9rem;
         }
+
         .avatar {
-            width: 40px;
-            height: 40px;
+            width: 48px;
+            height: 48px;
         }
+
         .avatarLeft {
-            left: -12%
+            left: -18px;
         }
+
         .avatarRight {
-            right: -12%
+            right: -18px;
+        }
+
+        .vs {
+            width: 46px;
+            height: 46px;
+            font-size: 1.1rem;
         }
     }
+
     @media (max-width: 530px) {
         .selectors {
             flex-direction: column;
+            gap: 12px;
         }
+
+        .manager {
+            width: 90%;
+            max-width: 360px;
+        }
+
+        .vs {
+            width: 44px;
+            height: 44px;
+            font-size: 1rem;
+        }
+
+        .avatarLeft {
+            left: -12px;
+        }
+
         .avatarRight {
-            border-right: none;
-            left: -12%
-        }
-        .right {
-            background-position: 100%;
+            right: -12px;
         }
     }
 </style>
 
 <div class="selectors">
-    <!-- manager 1 -->
+    <!-- Manager 1 -->
     <div class="manager">
         <div class="container">
-            <select class="selectInput left" id="managerOne" name="managerOne" bind:value={playerOne}>
+            <select
+                class="selectInput left"
+                id="managerOne"
+                name="managerOne"
+                bind:value={playerOne}
+            >
                 <option value={null}>Select a manager</option>
+
                 {#each usersOne as user}
-                    <option value={user}>{leagueTeamManagers.users[user].display_name}</option>
+                    <option value={user}>
+                        {leagueTeamManagers.users[user].display_name}
+                    </option>
                 {/each}
             </select>
+
             {#if playerOne}
-                <img class="avatar avatarLeft" src="{getTeamData(leagueTeamManagers.users, playerOne).avatar}"  alt="manager one avatar"/>
+                <img
+                    class="avatar avatarLeft"
+                    src={getTeamData(leagueTeamManagers.users, playerOne).avatar}
+                    alt="Manager one avatar"
+                />
             {/if}
         </div>
     </div>
-    <!-- vs -->
-    <span class="vs">vs</span>
-    <!-- manager 2 -->
+
+    <!-- VS -->
+    <span class="vs">VS</span>
+
+    <!-- Manager 2 -->
     <div class="manager">
         <div class="container">
-            <select class="selectInput right" id="managerOne" name="managerOne" bind:value={playerTwo}>
+            <select
+                class="selectInput right"
+                id="managerTwo"
+                name="managerTwo"
+                bind:value={playerTwo}
+            >
                 <option value={null}>Select a manager</option>
+
                 {#each usersTwo as user}
-                    <option value={user}>{leagueTeamManagers.users[user].display_name}</option>
+                    <option value={user}>
+                        {leagueTeamManagers.users[user].display_name}
+                    </option>
                 {/each}
             </select>
+
             {#if playerTwo}
-                <img class="avatar avatarRight" src="{getTeamData(leagueTeamManagers.users, playerTwo).avatar}"  alt="manager two avatar"/>
+                <img
+                    class="avatar avatarRight"
+                    src={getTeamData(leagueTeamManagers.users, playerTwo).avatar}
+                    alt="Manager two avatar"
+                />
             {/if}
         </div>
     </div>

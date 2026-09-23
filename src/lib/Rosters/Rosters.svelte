@@ -1,6 +1,6 @@
 <script>
 	import { loadPlayers } from '$lib/utils/helper';
-	import RosterSorter from './RosterSorter.svelte'
+	import RosterSorter from './RosterSorter.svelte';
 
 	export let leagueData, rosterData, leagueTeamManagers, playersInfo;
 
@@ -9,9 +9,9 @@
 	const refreshPlayers = async () => {
 		const newPlayersInfo = await loadPlayers(null, true);
 		players = newPlayersInfo.players;
-	}
+	};
 
-	if(playersInfo.stale) {
+	if (playersInfo.stale) {
 		refreshPlayers();
 	}
 </script>
@@ -20,9 +20,16 @@
 	.rosters {
 		position: relative;
 		z-index: 1;
+		width: 100%;
 	}
 </style>
 
 <div class="rosters">
-	<RosterSorter rosters={rosterData.rosters} {players} {leagueTeamManagers} startersAndReserve={rosterData.startersAndReserve} {leagueData} />
+	<RosterSorter
+		rosters={rosterData.rosters}
+		{players}
+		{leagueTeamManagers}
+		startersAndReserve={rosterData.startersAndReserve}
+		{leagueData}
+	/>
 </div>

@@ -37,73 +37,135 @@
 
 <style>
     .accuracy {
-        display: block;
-        width: 80%;
-        max-width: 800px;
-        margin: 2em auto 3em;
+        width: min(92%, 850px);
+        margin: 0 auto 22px;
+        padding: 14px 18px;
+        border: 1px solid rgba(85, 122, 194, 0.16);
+        border-radius: 14px;
+        background: rgba(241, 248, 255, 0.82);
+        box-shadow: 0 3px 12px rgba(50, 85, 150, 0.05);
     }
 
     .accuracyText {
-        font-size: 0.7em;
-        color: #666;
+        margin-bottom: 8px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 11px;
+        font-weight: 700;
+        color: #49639c;
     }
 
     .disclaimer {
         font-style: italic;
-        color: #888;
+        font-weight: 500;
+        color: #7c8baa;
     }
 
     :global(.draftBoard) {
         display: block;
-        width: 95%;
-        margin: 2em auto 3em;
+        width: calc(100% - 32px);
+        margin: 0 16px 28px;
         overflow-x: auto;
+        border: 1px solid rgba(85, 122, 194, 0.18);
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.78);
+        box-shadow: 0 4px 15px rgba(50, 85, 150, 0.06);
     }
 
-	:global(.draftTeam) {
-        font-size: 0.8em;
-		text-align: center;
-		padding: 5px 0;
-		background-color: var(--transactHeader);
-        white-space: break-spaces;
-        line-height: 1em;
-        height: 5em;
-        vertical-align: initial;
-	}
-
-	:global(.draftBoard table) {
-        border-collapse: collapse;
+    :global(.draftBoard table) {
+        border-collapse: separate;
+        border-spacing: 0;
         table-layout: fixed;
         width: 100%;
-        min-width: 1200px;
-	}
-
-    :global(.draftBoard td) {
-        border-right: 1px solid #ddd;
-        height: 7em;
-        font-size: 0.7em;
+        min-width: 1050px;
+        overflow: hidden;
     }
 
-    :global(.draftBoard td:last-of-type) {
+    :global(.draftTeam) {
+        height: 92px;
+        padding: 9px 5px;
+        text-align: center;
+        vertical-align: middle;
+        background: linear-gradient(135deg, #f0f6ff, #faf7ff);
+        border-right: 1px solid rgba(85, 122, 194, 0.13);
+        border-bottom: 1px solid rgba(85, 122, 194, 0.13);
+        color: #304678;
+        font-family: 'Poppins', sans-serif;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 1.15;
+        white-space: normal;
+    }
+
+    :global(.draftBoard th:last-child .draftTeam),
+    :global(.draftBoard .draftTeam:last-child) {
         border-right: none;
     }
 
-	.avatar {
-		border-radius: 50%;
-        height: 30px;
-        width: 30px;
-        margin: 0.4em 0;
-		border: 0.25px solid #777;
-	}
+    :global(.draftBoard td) {
+        position: relative;
+        height: 92px;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        font-size: 10px;
+        border-right: 1px solid rgba(85, 122, 194, 0.11);
+        border-bottom: 1px solid rgba(85, 122, 194, 0.10);
+        background: rgba(255, 255, 255, 0.70);
+    }
+
+    :global(.draftBoard tr:last-child td) {
+        border-bottom: none;
+    }
+
+    :global(.draftBoard td:last-child) {
+        border-right: none;
+    }
+
+    .avatar {
+        display: inline-block;
+        width: 42px;
+        height: 42px;
+        margin: 0 0 5px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid rgba(122, 80, 220, 0.20);
+        box-shadow: 0 2px 6px rgba(50, 85, 150, 0.10);
+        vertical-align: middle;
+    }
 
     .clickable {
         cursor: pointer;
     }
-	
-	:global(.curDraftName) {
-        color: #888;
-        font-size: 0.7em;
+
+    :global(.curDraftName) {
+        color: #7c8baa;
+        font-size: 8px;
         font-style: italic;
+        font-weight: 500;
+    }
+
+    @media (max-width: 700px) {
+        :global(.draftBoard) {
+            width: calc(100% - 18px);
+            margin: 0 9px 22px;
+        }
+
+        :global(.draftBoard table) {
+            min-width: 900px;
+        }
+
+        :global(.draftTeam) {
+            height: 78px;
+            font-size: 9px;
+        }
+
+        :global(.draftBoard td) {
+            height: 78px;
+        }
+
+        .avatar {
+            width: 36px;
+            height: 36px;
+        }
     }
 </style>
 

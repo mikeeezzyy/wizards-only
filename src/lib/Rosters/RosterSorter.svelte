@@ -1,26 +1,28 @@
 <script>
-    import Button, { Label } from '@smui/button';
+	import Button, { Label } from '@smui/button';
 	import Roster from './Roster.svelte';
-	
+
 	export let rosters, leagueTeamManagers, startersAndReserve, leagueData, players;
 
 	const rosterPositions = leagueData.roster_positions;
-
-
 	const numDivisions = leagueData.settings.divisions || 1;
 
 	const divisions = [];
 
-	for(let i = 0; i < numDivisions; i++) {
+	for (let i = 0; i < numDivisions; i++) {
 		divisions.push({
 			name: leagueData.metadata ? leagueData.metadata[`division_${i + 1}`] : null,
-			rosters: [],
-		})
+			rosters: []
+		});
 	}
 
-	for(const rosterID in rosters) {
-        const roster = rosters[rosterID];
-        const division = !roster.settings.division || roster.settings.division > numDivisions ? 0 : roster.settings.division - 1;
+	for (const rosterID in rosters) {
+		const roster = rosters[rosterID];
+		const division =
+			!roster.settings.division || roster.settings.division > numDivisions
+				? 0
+				: roster.settings.division - 1;
+
 		divisions[division].rosters.push(roster);
 	}
 
@@ -28,113 +30,166 @@
 </script>
 
 <style>
-	.division {
-		display: flex;
-		justify-content: space-around;
-		flex-wrap: wrap;
-		margin: 10px auto 20px;
-		width: 95%;
+	.rosters-page {
+		width: 100%;
+		max-width: 1500px;
+		margin: 0 auto;
+		padding: 18px 20px 50px;
+		box-sizing: border-box;
 	}
 
-	.banner {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		height: 140px;
-		width: 400px;
-		border-radius: 40px;
-		margin: 10px auto;
-		background-repeat: no-repeat;
-		background-size: auto 140px;
-	}
-
-	.banner-D-1 {
-		background-image: url("/division-1-banner.png");
-		background-position: left; 
-	}
-
-	.banner-D-2 {
-		background-image: url("/division-2-banner.png");
-		background-position: right; 
-	}
-
-	.banner-D-3 {
-		background-image: url("/division-3-banner.png");
-		background-position: left; 
-	}
-
-	h2 {
+	.page-header {
+		position: relative;
+		overflow: hidden;
 		text-align: center;
-		font-size: 3em;
+		margin: 0 auto 22px;
+		padding: 22px 24px 20px;
+		border-radius: 24px;
+		background: rgba(255, 255, 255, 0.94);
+		border: 1px solid rgba(73, 126, 213, 0.16);
+		box-shadow: 0 10px 30px rgba(30, 64, 175, 0.10);
 	}
 
-	@media (max-width: 460px) {
-		.banner {
-			height: 110px;
-			width: 315px;
-			background-repeat: no-repeat;
-			background-size: auto 110px;
-		}
-
-		h2 {
-			font-size: 2.5em;
-		}
+	.page-header::before {
+		content: "";
+		position: absolute;
+		inset: 0;
+		background:
+			radial-gradient(circle at 15% 20%, rgba(41, 182, 246, 0.13), transparent 28%),
+			radial-gradient(circle at 85% 15%, rgba(124, 58, 237, 0.12), transparent 30%);
+		pointer-events: none;
 	}
 
-	@media (max-width: 360px) {
-		.banner {
-			height: 90px;
-			width: 258px;
-			background-repeat: no-repeat;
-			background-size: auto 90px;
-		}
-
-		h2 {
-			font-size: 2em;
-		}
+	.page-header h1 {
+		position: relative;
+		margin: 0;
+		font-family: "Luckiest Guy", "Permanent Marker", cursive;
+		font-size: clamp(2rem, 4vw, 3rem);
+		font-weight: 400;
+		letter-spacing: 0.03em;
+		color: var(--wizard-purple-dark, #35116B);
 	}
 
-	.banner h2 {
-		text-shadow: var(--fff) 0px 0px 3px, var(--fff) 0px 0px 3px, var(--fff) 0px 0px 3px,
-            		 var(--fff) 0px 0px 3px, var(--fff) 0px 0px 3px, var(--fff) 0px 0px 3px;
-		-webkit-font-smoothing: antialiased;
-	}
-
-	.minExp {
-		display: block;
-		text-align: center;
-		margin: 10px 0;
-		cursor: pointer;
-	}
-
-	.loading {
-		display: block;
-		width: 85%;
-		max-width: 500px;
-		margin: 80px auto;
+	.page-header p {
+		position: relative;
+		margin: 5px 0 0;
+		color: var(--wizard-muted, #64748B);
+		font-weight: 600;
 	}
 
 	.expandButton {
-		margin: 5em auto 2em;
-    	text-align: center;
+		display: flex;
+		justify-content: center;
+		margin: 0 auto 24px;
+	}
+
+	.expandButton :global(button) {
+		border-radius: 999px !important;
+		border: 2px solid var(--wizard-blue, #29B6F6) !important;
+		color: var(--wizard-purple-dark, #35116B) !important;
+		background: rgba(255, 255, 255, 0.9) !important;
+		font-weight: 800 !important;
+		padding: 0 18px !important;
+		box-shadow: 0 5px 15px rgba(30, 64, 175, 0.08);
+	}
+
+	.expandButton :global(button:hover) {
+		background: var(--wizard-blue-light, #DDF7FF) !important;
+	}
+
+	.division-section {
+		margin: 0 auto 30px;
+	}
+
+	.division-heading {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		margin: 0 0 14px;
+		padding: 12px 18px;
+		border-radius: 16px;
+		background: linear-gradient(
+			90deg,
+			rgba(124, 58, 237, 0.96),
+			rgba(41, 182, 246, 0.94)
+		);
+		box-shadow: 0 8px 20px rgba(30, 64, 175, 0.12);
+	}
+
+	.division-heading::before {
+		content: "🏈";
+		font-size: 1.15rem;
+	}
+
+	.division-heading h2 {
+		margin: 0;
+		color: #fff;
+		font-family: "Luckiest Guy", "Permanent Marker", cursive;
+		font-size: clamp(1.25rem, 2.4vw, 1.8rem);
+		font-weight: 400;
+		letter-spacing: 0.04em;
+		text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+	}
+
+	.division {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		gap: 16px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	@media (max-width: 700px) {
+		.rosters-page {
+			padding: 12px 10px 40px;
+		}
+
+		.page-header {
+			padding: 18px 16px;
+			border-radius: 20px;
+		}
+
+		.division {
+			gap: 10px;
+		}
 	}
 </style>
 
-<div class="expandButton">
-	<Button onclick={() => {expanded = !expanded}} variant="outlined">
-		<Label>{expanded ? "Minimize" : "Expand"} All Benches</Label>
-	</Button>
-</div>
+<div class="rosters-page">
+	<section class="page-header">
+		<h1>ROSTERS</h1>
+		<p>Every wizard. Every starter. Every bench.</p>
+	</section>
 
-{#each divisions as division, ix}
-	{#if division.name}
-		<div class="banner banner-D-{ix + 1}">
-			<h2>{division.name}</h2>
-		</div>
-	{/if}
-	<div class="division">
-		{#each division.rosters as roster}
-			<Roster division={ix + 1} {expanded} {rosterPositions} {roster} {leagueTeamManagers} {players} {startersAndReserve} />
-		{/each}
+	<div class="expandButton">
+		<Button onclick={() => { expanded = !expanded }} variant="outlined">
+			<Label>{expanded ? "Minimize" : "Expand"} All Benches</Label>
+		</Button>
 	</div>
-{/each}
+
+	{#each divisions as division, ix}
+		<section class="division-section">
+			{#if division.name}
+				<div class="division-heading">
+					<h2>{division.name}</h2>
+				</div>
+			{/if}
+
+			<div class="division">
+				{#each division.rosters as roster}
+					<Roster
+						division={ix + 1}
+						{expanded}
+						{rosterPositions}
+						{roster}
+						{leagueTeamManagers}
+						{players}
+						{startersAndReserve}
+					/>
+				{/each}
+			</div>
+		</section>
+	{/each}
+</div>

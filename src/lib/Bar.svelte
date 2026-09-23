@@ -2,7 +2,7 @@
 	import { getAvatarFromTeamManagers, getTeamNameFromTeamManagers, gotoManager, round } from "./utils/helperFunctions/universalFunctions";
 
 
-    let {leagueTeamManagers, stat, label, xMin, xMax, secondStat, managerID, rosterID, color, year} = $props();
+    let {leagueTeamManagers, stat, label, xMin, xMax, secondStat, managerID, rosterID, color, year, recordMode = false} = $props();
 
     let user = $derived(managerID ? leagueTeamManagers.users[managerID] : null);
 </script>
@@ -139,12 +139,14 @@
         <div class="statBars">
             <div class="leftSpacer" />
             <div class="bars">
-                <div class="bar{!secondStat  ? '' : ' opacity'}" style="background-color: var({color}); width: {(stat - xMin) / (xMax - xMin == 0 ? 1 : (xMax - xMin)) * 100}%;">
-                    {#if !secondStat}
+                <div class="bar{!secondStat || recordMode ? '' : ' opacity'}" style="background-color: var({color}); width: {(stat - xMin) / (xMax - xMin == 0 ? 1 : (xMax - xMin)) * 100}%;">
+                    {#if recordMode}
+                        <span class="barLabel">{stat}-{secondStat}</span>
+                    {:else if !secondStat}
                         <span class="barLabel">{stat}{label}</span>
                     {/if}
                 </div>
-                {#if secondStat}
+                {#if secondStat && !recordMode}
                     <div class="bar secondBar" style="background-color: var({color}); width: {(secondStat - xMin) / (xMax - xMin == 0 ? 1 : (xMax - xMin)) * 100}%;">
                         <span class="barLabel">{secondStat}&nbsp;&nbsp;of&nbsp;&nbsp;{stat}&nbsp;&nbsp;({round(secondStat/stat*100)}%)</span>
                     </div>

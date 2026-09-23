@@ -1,5 +1,4 @@
 <script>
-    import Button, { Group, Label } from '@smui/button';
     import { generateGraph, gotoManager, round } from '$lib/utils/helper';
 
   	import DataTable, { Head, Body, Row, Cell } from '@smui/data-table';
@@ -9,69 +8,9 @@
     export let key, tradesData, waiversData, weekRecords, weekLows, seasonLongRecords, seasonLongLows, showTies, winPercentages, fptsHistories, lineupIQs, prefix, blowouts, closestMatchups, allTime=false, leagueTeamManagers;
 
     let graphs = [];
-    let curTable = 0;
     let curGraph = 0;
 
-    let iqOffset = 0;
-    let tables = [
-        "Win Percentages",
-        "Points",
-        "Transactions",
-    ]
-
     const year = allTime ? null : prefix;
-
-    const changeTable = (newGraph) => {
-        switch (newGraph) {
-            case 0 - iqOffset:
-            case (4 + (99 * iqOffset)):
-                curTable = 0;
-                break;
-            case 1 - iqOffset:
-            case 2 - iqOffset:
-                curTable = 1 - iqOffset;
-                break;
-            case 3 - iqOffset:
-                curTable = 2 - iqOffset;
-                break;
-            case 5 - (2 * iqOffset):
-            case 6 - (2 * iqOffset):
-                curTable = 3 - iqOffset;
-                break;
-            default:
-                curTable = 0;
-                break;
-        }
-    }
-
-    const changeGraph = (newTable) => {
-        switch (newTable) {
-            case 0 - iqOffset:
-                if(curGraph == 0 || curGraph == 4) {
-                    break;
-                }
-                curGraph = 0;
-                break;
-            case 1 - iqOffset:
-                if(curGraph == 1 - iqOffset || curGraph == 2 - iqOffset) {
-                    break;
-                }
-                curGraph = 1 - iqOffset;
-                break;
-            case 2 - iqOffset:
-                curGraph = 3 - iqOffset;
-                break;
-            case 3 - iqOffset:
-                if(curGraph == 5 - (2 * iqOffset) || curGraph == 6 - (2 * iqOffset)) {
-                    break;
-                }
-                curGraph = 5 - (2 * iqOffset);
-                break;
-            default:
-                curGraph = 0;
-                break;
-        }
-    }
 
     const setGraphs = (wD) => {
         const lineupIQGraph = {
@@ -99,7 +38,8 @@
             stat: "",
             header: "Team Wins",
             field: "wins",
-            short: "Wins"
+            secondField: "losses",
+            short: "Wins/Losses"
         }
 
         const winPercentagesGraph = {
@@ -200,26 +140,8 @@
         return transactions;
     }
 
-    const setTables = (lIQs) => {
-        const t = [
-            "Win Percentages",
-            "Points",
-        ]
-        if(key == "regularSeasonData") {
-            t.push("Transactions")
-        }
-        if(!lIQs[0]?.potentialPoints) {
-            iqOffset = 1;
-        } else {
-            t.unshift('Lineup IQs');
-        }
-        tables = t
-    }
 
     $: transactions =  setTransactionsAndGraphs(waiversData)
-    $: changeTable(curGraph);
-    $: changeGraph(curTable);
-    $: setTables(lineupIQs)
     
     let innerWidth;
 
@@ -228,6 +150,106 @@
 <svelte:window bind:innerWidth={innerWidth} />
 
 <style>
+    .record-page-heading {
+        font-family: 'Luckiest Guy', cursive;
+        color: #6d28d9;
+    }
+
+    :global(.records-page .recordTable),
+    :global(.records-page .rankingTable) {
+        background: rgba(255,255,255,0.97);
+        border: 1px solid rgba(73,126,213,0.14);
+        border-radius: 18px;
+        overflow: hidden;
+        box-shadow: 0 8px 24px rgba(30,64,175,0.09);
+    }
+
+    :global(.records-page .recordTable) {
+        margin: 0;
+        width: 100%;
+        min-width: 0 !important;
+        max-width: 100%;
+    }
+
+    :global(.records-page .rankingTable) {
+        margin: 0;
+        min-width: min(100%, 520px);
+    }
+
+    :global(.records-page .recordTable .headerPrimary) {
+        background: linear-gradient(135deg, #6d28d9, #2563eb);
+        color: white;
+        font-family: 'Luckiest Guy', cursive;
+        font-size: clamp(.78rem, 1.25vw, 1.05rem);
+        font-weight: 400;
+        letter-spacing: .35px;
+        line-height: 1.15;
+        white-space: normal;
+        overflow-wrap: anywhere;
+        padding: 9px 8px;
+    }
+
+    :global(.records-page .recordTable .header:not(.headerPrimary)),
+    :global(.records-page .rankingTable .header:not(.headerPrimary)) {
+        background: #eef7ff;
+        color: #334155;
+        font-weight: 800;
+    }
+
+    :global(.records-page .recordTable td),
+    :global(.records-page .rankingTable td),
+    :global(.records-page .recordTable th),
+    :global(.records-page .rankingTable th) {
+        border-bottom-color: rgba(37,99,235,0.10);
+    }
+
+    :global(.records-page .recordTable tr:hover td),
+    :global(.records-page .rankingTable tr:hover td) {
+        background: #f8fbff;
+    }
+
+    :global(.records-page .recordTable .mdc-data-table__cell),
+    :global(.records-page .recordTable .mdc-data-table__header-cell) {
+        white-space: normal;
+        overflow-wrap: anywhere;
+        word-break: normal;
+    }
+
+    :global(.records-page .recordTable .mdc-data-table__header-cell) {
+        vertical-align: middle;
+    }
+
+    :global(.records-page .fullFlex) {
+        gap: 18px;
+        align-items: flex-start;
+        margin: 18px auto 34px;
+        padding: 0 4px;
+    }
+
+    :global(.records-page .fullFlex > .recordTable) {
+        flex: 0 1 calc(50% - 9px);
+        width: calc(50% - 9px);
+        box-sizing: border-box;
+    }
+
+    :global(.records-page .rankingHolder) {
+        padding: 0 4px;
+    }
+
+    :global(.records-page h4) {
+        font-family: 'Luckiest Guy', cursive;
+        font-size: clamp(25px, 3vw, 34px);
+        font-weight: 400;
+        letter-spacing: .4px;
+        color: #6d28d9;
+        margin: 26px 0 14px;
+    }
+
+    :global(.records-page .subTitle),
+    :global(.records-page .italic) {
+        color: #64748b;
+    }
+
     :global(.headerPrimary) {
         background-color: var(--headerPrimary);
         text-align: center;
@@ -258,12 +280,6 @@
         margin: 3em auto 5em;
     }
 
-    .rankingHolder {
-        display: block;
-        width: 100%;
-        overflow-x: hidden;
-    }
-
     .subTitle {
         font-style: italic;
         font-size: 0.7em;
@@ -271,26 +287,30 @@
         line-height: 1.2em;
     }
 
+    .sectionHeading {
+        width: min(100%, 760px);
+        margin: 28px auto 18px;
+        padding: 14px 24px 13px;
+        border-radius: 18px;
+        background: rgba(255,255,255,0.94);
+        border: 1px solid rgba(73,126,213,0.16);
+        box-shadow: 0 8px 22px rgba(31,58,135,0.10);
+        text-align: center;
+        box-sizing: border-box;
+    }
+
     h4 {
         text-align: center;
-        margin: 2em 0 1em;
+        margin: 0;
     }
 
-    .rankingTableWrapper {
-        width: 25%;
-    }
-
-    .rankingInner {
-        position: relative;
-        display: flex;
-        flex-wrap: nowrap;
-        width: 400%;
-		transition: margin-left 0.8s;
-    }
-
-    .buttonHolder {
-        text-align: center;
-        margin: 2em 0 4em;
+    .sectionSubheading {
+        margin-top: 5px;
+        color: #475569;
+        font-size: 0.72rem;
+        font-weight: 900;
+        letter-spacing: 1.2px;
+        line-height: 1.25;
     }
 
     :global(.cellName) {
@@ -316,41 +336,14 @@
         border-bottom-color: var(--borderOverride);
     }
 
-    /* Start button resizing */
-
-    @media (max-width: 540px) {
-        :global(.buttonHolder .selectionButtons) {
-            font-size: 0.6em;
-        }
-    }
-
-    @media (max-width: 415px) {
-        :global(.buttonHolder .selectionButtons) {
-            font-size: 0.5em;
-            padding: 0 6px;
-            height: 30px;
-        }
-    }
-
-    @media (max-width: 315px) {
-        :global(.buttonHolder .selectionButtons) {
-            font-size: 0.45em;
-            padding: 0 3px;
-        }
-    }
-
-    @media (max-width: 265px) {
-        :global(.buttonHolder .selectionButtons) {
-            font-size: 0.4em;
-            padding: 0 2px;
-            height: 24px;
-            min-width: 40px;
-        }
-    }
-
-    /* End button resizing */
-
     /* Start record table resizing */
+
+    @media (max-width: 900px) {
+        :global(.records-page .fullFlex > .recordTable) {
+            flex-basis: 100%;
+            width: 100%;
+        }
+    }
 
     @media (max-width: 510px) {
         :global(.recordTable th) {
@@ -461,7 +454,18 @@
     /* END ranking table resizing */
 </style>
 
-<h4>{prefix} Records</h4>
+<div class="sectionHeading">
+    <h4>{prefix} Records</h4>
+    <div class="sectionSubheading">
+        {#if allTime}
+            SINGLE WEEK, SEASON, AND PLAYOFF RECORDS
+        {:else if key == "playoffData"}
+            PLAYOFF RECORDS
+        {:else}
+            SEASON RECORDS
+        {/if}
+    </div>
+</div>
 
 <div class="fullFlex">
     {#if weekRecords && weekRecords.length}
@@ -657,158 +661,7 @@
     {/if}
 </div>
 
-<h4>{prefix} {key == "playoffData" ? "Playoff " : ""}Rankings</h4>
-
 {#if graphs.length}
     <BarChart {graphs} bind:curGraph={curGraph} {leagueTeamManagers} />
 {/if}
 
-<div class="rankingHolder">
-    <div class="rankingInner" style="margin-left: -{100 * curTable}%;">
-        {#if lineupIQs[0]?.potentialPoints}
-            <div class="rankingTableWrapper">
-                <DataTable class="rankingTable">
-                    <Head>
-                        <Row>
-                            <Cell class="header headerPrimary" colspan=5>
-                                {prefix} {key == "playoffData" ? "Playoff " : ""}Lineup IQ Rankings
-                                <div class="subTitle">
-                                    The percentage of potential points each manager has captured
-                                </div>
-                            </Cell>
-                        </Row>
-                        <Row>
-                            <Cell class="header"></Cell>
-                            <Cell class="header">Manager</Cell>
-                            <Cell class="header">Lineup IQ</Cell>
-                            <Cell class="header">Points</Cell>
-                            <Cell class="header">Potential Points</Cell>
-                        </Row>
-                    </Head>
-                    <Body>
-                        {#each lineupIQs as lineupIQ, ix}
-                            <Row>
-                                <Cell>{ix + 1}</Cell>
-                                <Cell class="cellName" onclick={() => gotoManager({year: lineupIQ.year || prefix, leagueTeamManagers, managerID: lineupIQ.managerID, rosterID: lineupIQ.rosterID})}>
-                                    <RecordTeam {leagueTeamManagers} managerID={lineupIQ.managerID} rosterID={lineupIQ.rosterID} year={allTime ? lineupIQ.year : prefix} />
-                                </Cell>
-                                <Cell>{lineupIQ.iq}%</Cell>
-                                <Cell>{round(lineupIQ.fpts)}</Cell>
-                                <Cell>{round(lineupIQ.potentialPoints)}</Cell>
-                            </Row>
-                        {/each}
-                    </Body>
-                </DataTable>
-            </div>
-        {/if}
-
-        <div class="rankingTableWrapper">
-            <DataTable class="rankingTable">
-                <Head>
-                    <Row>
-                        <Cell class="header headerPrimary" colspan=6>{prefix} {key == "playoffData" ? "Playoff " : ""}Win Percentages Rankings</Cell>
-                    </Row>
-                    <Row>
-                        <Cell class="header"></Cell>
-                        <Cell class="header">Manager</Cell>
-                        <Cell class="header">Win %</Cell>
-                        <Cell class="header">Wins</Cell>
-                        {#if showTies}
-                            <Cell class="header">Ties</Cell>
-                        {/if}
-                        <Cell class="header">Losses</Cell>
-                    </Row>
-                </Head>
-                <Body>
-                    {#each winPercentages as winPercentage, ix}
-                        <Row>
-                            <Cell>{ix + 1}</Cell>
-                            <Cell class="cellName" onclick={() => gotoManager({year: winPercentage.year || prefix, leagueTeamManagers, rosterID: winPercentage.rosterID, managerID: winPercentage.managerID})}>
-                                <RecordTeam {leagueTeamManagers} managerID={winPercentage.managerID} rosterID={winPercentage.rosterID} year={allTime ? winPercentage.year : prefix} />
-                            </Cell>
-                            <Cell>{winPercentage.percentage}%</Cell>
-                            <Cell>{winPercentage.wins}</Cell>
-                            {#if showTies}
-                                <Cell>{winPercentage.ties}</Cell>
-                            {/if}
-                            <Cell>{winPercentage.losses}</Cell>
-                        </Row>
-                    {/each}
-                </Body>
-            </DataTable>
-        </div>
-
-        <div class="rankingTableWrapper">
-            <DataTable class="rankingTable">
-                <Head>
-                    <Row>
-                        <Cell class="header headerPrimary" colspan=5>
-                            {prefix} {key == "playoffData" ? "Playoff " : ""}Fantasy Points Rankings
-                        </Cell>
-                    </Row>
-                    <Row>
-                        <Cell class="header"></Cell>
-                        <Cell class="header">Manager</Cell>
-                        <Cell class="header">Points For</Cell>
-                        <Cell class="header">Points Against</Cell>
-                        <Cell class="header">Points Per Game</Cell>
-                    </Row>
-                </Head>
-                <Body>
-                    {#each fptsHistories as fptsHistory, ix}
-                        <Row>
-                            <Cell>{ix + 1}</Cell>
-                            <Cell class="cellName" onclick={() => gotoManager({year: fptsHistory.year || prefix, leagueTeamManagers, rosterID: fptsHistory.rosterID, managerID: fptsHistory.managerID})}>
-                                <RecordTeam {leagueTeamManagers} managerID={fptsHistory.managerID} rosterID={fptsHistory.rosterID} year={allTime ? fptsHistory.year : prefix} />
-                            </Cell>
-                            <Cell>{round(fptsHistory.fptsFor)}</Cell>
-                            <Cell>{round(fptsHistory.fptsAgainst)}</Cell>
-                            <Cell>{round(fptsHistory.fptsPerGame)}</Cell>
-                        </Row>
-                    {/each}
-                </Body>
-            </DataTable>
-        </div>
-
-        <div class="rankingTableWrapper">
-            <DataTable class="rankingTable">
-                <Head>
-                    <Row>
-                        <Cell class="header headerPrimary" colspan=4>
-                            {prefix} Transaction Totals
-                        </Cell>
-                    </Row>
-                    <Row>
-                        <Cell class="header"></Cell>
-                        <Cell class="header">Manager</Cell>
-                        <Cell class="header">Trades</Cell>
-                        <Cell class="header">Waivers</Cell>
-                    </Row>
-                </Head>
-                <Body>
-                    {#each transactions as transaction, ix}
-                        <Row>
-                            <Cell>{ix + 1}</Cell>
-                            <Cell class="cellName" onclick={() => gotoManager({year: transaction.year || prefix, leagueTeamManagers, rosterID: transaction.rosterID, managerID: transaction.managerID})}>
-                                <RecordTeam {leagueTeamManagers} managerID={transaction.managerID} rosterID={transaction.rosterID} year={allTime ? transaction.year : prefix} />
-                            </Cell>
-                            <Cell>{transaction.trades}</Cell>
-                            <Cell>{transaction.waivers}</Cell>
-                        </Row>
-                    {/each}
-                </Body>
-            </DataTable>
-        </div>
-
-    </div>
-</div>
-
-<div class="buttonHolder">
-    <Group variant="outlined">
-        {#each tables as table, ix}
-            <Button class="selectionButtons" onclick={() => curTable = ix} variant="{curTable == ix ? "raised" : "outlined"}">
-                <Label>{table}</Label>
-            </Button>
-        {/each}
-    </Group>
-</div>

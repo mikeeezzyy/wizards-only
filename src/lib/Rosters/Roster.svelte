@@ -80,30 +80,6 @@
 		finalIR = digestData(players, roster.reserve, false, true);
 	}
 
-	const buildRecord = (newRoster) => {
-		const innerRecord = [];
-		// Check to make sure that record exists
-		if(!newRoster.metadata || !newRoster.metadata.record) return innerRecord;
-		// simplify record
-		for (const c of newRoster.metadata.record) {
-			switch (c) {
-				case "W":
-					innerRecord.push("green");
-					break;
-				case "L":
-					innerRecord.push("red");
-					break;
-			
-				default:
-					innerRecord.push("gray");
-					break;
-			}
-		}
-		return innerRecord;
-	}
-
-	$: record = buildRecord(roster);
-
 	let selected = "0px";
 	let status = "minimized";
 	const toggleSelected = () => {
@@ -182,17 +158,6 @@
 		background-color: var(--r3);
 	}
 
-	.record {
-		width: 100%;
-		margin-bottom: 5px;
-		display: flex;
-		justify-content: space-around;
-	}
-
-	.result {
-		width: 11px;
-	}
-
 	h3 {
 		font-size: 1.5em;
 		font-weight: 500;
@@ -207,9 +172,6 @@
 	@media (max-width: 500px) {
 		.team {
 			font-size: 0.9em;
-		}
-		.result {
-			width: 9px;
 		}
 
 		h3 {
@@ -267,12 +229,6 @@
 						<img alt="team avatar" class="teamAvatar" src="{team ? team.avatar : 'https://sleepercdn.com/images/v2/icons/player_default.webp'}" />
 						{team?.name ? team.name : 'No Manager'}
 					</h3>
-
-					<div class="record">
-						{#each record as result}
-							<img alt="match result" class="result" src="/{result}.png" />
-						{/each}
-					</div>
 				</Cell>
 			</Row>
 		</Head>

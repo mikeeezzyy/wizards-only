@@ -7,108 +7,95 @@
 <style>
     :global(.draftCell) {
         position: relative;
+        overflow: hidden;
     }
 
     :global(.changedHands) {
-        background-color: var(--draftSwapped);
+        background: linear-gradient(
+            135deg,
+            rgba(239, 232, 255, 0.92),
+            rgba(249, 246, 255, 0.92)
+        );
     }
 
     .draftPos {
         position: absolute;
-        top: 0.3em;
-        left: 0.3em;
+        top: 7px;
+        left: 7px;
+        z-index: 2;
         font-style: italic;
-        color: #aaa;
+        font-size: 8px;
+        font-weight: 600;
+        color: #8b98b3;
     }
 
     .draftPosPrev {
         position: absolute;
-        top: 0.1em;
-        left: 0.1em;
+        top: 5px;
+        left: 5px;
+        z-index: 2;
         font-style: italic;
-        color: #444;
+        font-size: 8px;
+        color: #65728e;
     }
 
     .newOwner {
-        font-style: italic;
-        color: #444;
+        position: absolute;
+        left: 4px;
+        right: 4px;
+        bottom: 7px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 9px;
+        font-weight: 600;
+        color: #304678;
         text-align: center;
         white-space: break-spaces;
-        line-height: 1.2em;
+        line-height: 1.15em;
     }
 
-	:global(.prevQB) {
-		background-color: var(--QBfade);
-	}
+    /* Position color-coding for previous drafts. !important keeps these colors
+       visible over SMUI DataTable's default cell background. */
+    :global(.draftCell.prevQB) { background: rgba(239, 83, 80, 0.28) !important; }
+    :global(.draftCell.prevRB) { background: rgba(76, 175, 80, 0.28) !important; }
+    :global(.draftCell.prevWR) { background: rgba(66, 133, 244, 0.28) !important; }
+    :global(.draftCell.prevTE) { background: rgba(255, 193, 7, 0.30) !important; }
+    :global(.draftCell.prevK) { background: rgba(171, 71, 188, 0.26) !important; }
+    :global(.draftCell.prevDEF) { background: rgba(117, 117, 117, 0.22) !important; }
+    :global(.draftCell.prevCB) { background: rgba(38, 166, 154, 0.26) !important; }
+    :global(.draftCell.prevSS) { background: rgba(63, 81, 181, 0.25) !important; }
+    :global(.draftCell.prevFS) { background: rgba(30, 136, 229, 0.25) !important; }
+    :global(.draftCell.prevDE) { background: rgba(117, 117, 117, 0.24) !important; }
+    :global(.draftCell.prevDL) { background: rgba(117, 117, 117, 0.24) !important; }
+    :global(.draftCell.prevLB) { background: rgba(92, 107, 192, 0.25) !important; }
 
-	:global(.prevWR) {
-		background-color: var(--WRfade);
-	}
-
-	:global(.prevRB) {
-		background-color: var(--RBfade);
-	}
-
-	:global(.prevTE) {
-		background-color: var(--TEfade);
-	}
-
-	:global(.prevK) {
-		background-color: var(--Kfade);
-	}
-
-	:global(.prevDEF) {
-		background-color: var(--DEfadeFfade);
-	}
-
-    :global(.prevCB) {
-        background-color: var(--CBfade);
-    }
-
-    :global(.prevSS) {
-        background-color: var(--SSfade);
-    }
-
-    :global(.prevFS) {
-        background-color: var(--FSfade);
-    }
-
-    :global(.prevDE) {
-        background-color: var(--DEfade);
-    }
-
-    :global(.prevDL) {
-        background-color: var(--DLfade);
-    }
-
-    :global(.prevLB) {
-        background-color: var(--LBfade);
-    }
-
-	.playerAvatar {
-		display: inline-block;
+    .playerAvatar {
+        display: inline-block;
         position: absolute;
         transform: translate(-50%, -50%);
         left: 50%;
-        top: 45%;
-		height: 25px;
-		width: 25px;
-		background-position: center;
-		border-radius: 100%;
-		background-repeat: no-repeat;
-		background-size: auto 25px;
-	}
+        top: 43%;
+        height: 38px;
+        width: 38px;
+        background-position: center;
+        border-radius: 100%;
+        background-repeat: no-repeat;
+        background-size: auto 38px;
+        border: 1px solid rgba(80, 100, 150, 0.12);
+    }
 
     .name {
         display: block;
-        width: 100%;
+        width: calc(100% - 8px);
         text-align: center;
         position: absolute;
-        left: 0;
+        left: 4px;
         white-space: break-spaces;
-        line-height: 1em;
-        bottom: 0.5em;
-        color: rgba(0, 0, 0, 0.87);
+        line-height: 1.05em;
+        bottom: 7px;
+        color: rgba(38, 59, 100, 0.90);
+        font-family: 'Poppins', sans-serif;
+        font-size: 9px;
+        font-weight: 600;
     }
 </style>
 

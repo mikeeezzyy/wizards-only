@@ -77,7 +77,7 @@
     }
 
     let starters;
-    
+
     $: digestStarters(ix, players, matchupWeek);
 
     let el;
@@ -112,22 +112,24 @@
 <svelte:window bind:innerWidth={innerWidth} />
 
 <style>
-    .matchup {
-        width: 95%;
-        max-width: 600px;
-        margin: 10px auto;
-    }
+.matchup {
+	width: 96%;
+	max-width: 760px;
+	margin: 14px auto;
+	font-family: 'Poppins', sans-serif;
+}
 
     .header {
         display: flex;
         justify-content: space-between;
         position: relative;
-        border: 1px solid #bbb;
-        border-radius: 10px;
-        opacity: 0.8;
+        border: 1px solid rgba(37, 99, 235, 0.18);
+        border-radius: 14px;
+        opacity: 1;
         cursor: pointer;
-		transition: opacity 0.5s;
+        transition: all 0.2s ease;
         overflow: hidden;
+        box-shadow: 0 6px 18px rgba(30, 64, 175, 0.12);
     }
 
     .header:hover {
@@ -138,64 +140,65 @@
         display: flex;
         align-items: center;
         width: 46%;
-        padding: 5px 2%;
+        padding: 8px 2%;
         top: 0;
         z-index: 2;
     }
 
     .divider {
-        position: absolute;
-        z-index: 3;
-        transform: translateX(-50%);
-        top: 0;
-        left: 50%;
-        height: 100%;
-        width: 15px;
+    	position: absolute;
+    	z-index: 3;
+    	transform: translateX(-50%);
+    	top: 0;
+    	left: 50%;
+    	height: 100%;
+    	width: 10px;
+    	background: rgba(255, 255, 255, 0.9);
+    	box-shadow: 0 0 6px rgba(255, 255, 255, 0.9);
     }
 
     .home {
-        justify-content: flex-start;
-        left: 0;
-        text-align: left;
-        background-color: #485566;
-    }
-
-    :global(.homeGlow) {
-        box-shadow: 0 0 6px 4px #3279cf;
-        background-color: #00316b !important;
-    }
+	justify-content: flex-start;
+	left: 0;
+	text-align: left;
+	background: linear-gradient(135deg, #2563eb, #3b82f6);
+}
+:global(.homeGlow) {
+box-shadow: none;
+background: #22C55E !important;
+}
 
     .away {
-        justify-content: flex-end;
-        right: 0;
-        text-align: right;
-        background-color: #8b6969;
+  	justify-content: flex-end;
+  	right: 0;
+  	text-align: right;
+  	background: linear-gradient(135deg, #6d28d9, #8b5cf6);
     }
 
-    :global(.awayGlow) {
-        box-shadow: 0 0 6px 4px #d15454;
-        background-color: #920505 !important;
-    }
+  :global(.awayGlow) {
+  	box-shadow: none;
+  	background: #22C55E !important;
+  }
 
-    .name {
-        margin: 0 5px;
-        font-size: 1em;
-        line-height: 1.1em;
-        flex-grow: 1;
-        word-break: break-word;
-        color: #fff;
-        font-style: italic;
-    }
-
-	.avatar {
-		vertical-align: middle;
-		border-radius: 50%;
-		height: 35px;
-		width: 35px;
-		margin: 0;
-		border: 0.25px solid #777;
-        background-color: #eee;
-	}
+  .name {
+	margin: 0 8px;
+	font-size: 1.05em;
+	line-height: 1.15em;
+	flex-grow: 1;
+	word-break: break-word;
+	color: #fff;
+	font-weight: 700;
+	letter-spacing: 0.01em;
+  }
+  .avatar {
+      vertical-align: middle;
+      border-radius: 50%;
+      height: 42px;
+      width: 42px;
+      margin: 0;
+      border: 2px solid rgba(255, 255, 255, 0.75);
+      background-color: #eee;
+  }
 
 	.playerAvatar {
         position: relative;
@@ -415,8 +418,10 @@
     }
 
     .totalPoints {
-        line-height: 1.1em;
-        color: #fff;
+  	line-height: 1.1em;
+  	color: #fff;
+  	font-weight: 600;
+  	font-size: 1em;
     }
 
     .totalPointsR {
@@ -430,9 +435,10 @@
     }
 
     .totalProjection {
-        color: #ccc;
-        font-size: 0.7em;
-        font-style: italic;
+  	color: rgba(255, 255, 255, 0.72);
+  	font-size: 0.7em;
+  	font-style: italic;
+  	font-weight: 400;
     }
 
     .points {
@@ -487,7 +493,7 @@
             <div class="name">{home.manager.name}</div>
             <div class="totalPoints totalPointsR">{round(homePointsTotal)}<div class="totalProjection">{round(homeProjectionTotal)}</div></div>
         </div>
-        <img class="divider" src="/{winning}Divider.jpg" alt="divider" />
+    <div class="divider"></div>
         <div class="opponent away{winning == "away" ? " awayGlow" : ""}">
             <div class="totalPoints totalPointsL">{round(awayPointsTotal)}<div class="totalProjection">{round(awayProjectionTotal)}</div></div>
             <div class="name" >{away.manager.name}</div>

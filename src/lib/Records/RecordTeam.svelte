@@ -11,6 +11,11 @@
 </script>
 
 <style>
+    .teamName {
+        color: #172554;
+        font-weight: 800;
+    }
+
 	.teamAvatar {
 		vertical-align: middle;
 		border-radius: 50%;
@@ -28,7 +33,7 @@
     }
 
     .managerNames {
-        font-size: 0.75em;
+        font-size: 0.72em;
         font-style: italic;
         color: var(--g999);
         max-width: 180px;

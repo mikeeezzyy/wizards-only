@@ -228,14 +228,10 @@
             <!-- name -->
             {@html player.name}
             <!-- name -->
-            {#if player.poss !== "DEF"}
-                <div class="additionalInfo">
-                    <span class="text-{player.poss}" >{@html player.poss}</span>
-                    {#if player.team}
-                        &nbsp;-&nbsp;
-                        {player.team}
-                    {/if}
-                </div>
+            {#if player.poss !== "DEF" && player.team}
+                <span class="additionalInfo">
+                    &nbsp;-&nbsp;{player.team}
+                </span>
             {/if}
         </div>
         {#if player.nickname}

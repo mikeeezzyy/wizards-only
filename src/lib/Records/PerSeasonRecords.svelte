@@ -124,6 +124,10 @@
 </script>
 
 <style>
+    .buttonHolder {
+        padding: 0 4px;
+    }
+
     /* Button Styling */
     .buttonHolder {
         text-align: center;

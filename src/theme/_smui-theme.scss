@@ -1,38 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@400;500;600;700&display=swap');
 @use 'sass:color';
 
 @use '@material/theme/color-palette';
 
-// Svelte Colors!
 @use '@material/theme/index' as theme with (
-  $primary: #00316b,
-  $secondary: #0082c3,
-  $surface: #fff,
-  $background: #fff,
+  $primary: #7C3AED,
+  $secondary: #2563EB,
+  $surface: #FFFFFF,
+  $background: #F8F7FC,
   $error: color-palette.$red-900,
 );
 
-// Import all the styles for the classes.
 @use '@material/typography/mdc-typography';
-// The following classes become available:
-//   mdc-typography--headline1
-//   mdc-typography--headline2
-//   mdc-typography--headline3
-//   mdc-typography--headline4
-//   mdc-typography--headline5
-//   mdc-typography--headline6
-//   mdc-typography--subtitle1
-//   mdc-typography--subtitle2
-//   mdc-typography--body1
-//   mdc-typography--body2
-//   mdc-typography--caption
-//   mdc-typography--button
-//   mdc-typography--overline
-//   mdc-typography--body1
- 
-// Import the mixins.
 @use '@material/typography/index' as typography;
 
 :root {
+  /* Wizards Only palette */
+  --wizard-blue: #29B6F6;
+  --wizard-blue-bright: #00E5FF;
+  --wizard-blue-light: #DDF7FF;
+
+  --wizard-purple: #6D28D9;
+  --wizard-purple-dark: #35116B;
+
+  --wizard-green: #39FF14;
+
+  --wizard-bg: #F4FAFF;
+  --wizard-card: #FFFFFF;
+  --wizard-text: #10182F;
+  --wizard-muted: #64748B;
+
+  --wizard-border: rgba(37, 99, 235, 0.15);
+  --wizard-shadow: 0 8px 30px rgba(30, 64, 175, 0.12);
+
+  /* Existing League Page variables */
   --fff: #fff;
   --fffTransparent: rgba(255,255,255,0);
   --f8f8f8: #f8f8f8;
@@ -50,146 +51,280 @@
   --g333: #333;
   --g111: #111;
   --g000: #000;
+
   --boxShadowOne: #ccc;
   --boxShadowTwo: #cacaca;
   --boxShadowThree: #d4d4d4;
+
   --ir: #ddd;
   --champShadow: #555;
-  --transactHeader: #f5fcff;
-  --draftSwapped: #f8fcff;
-  --waiverAdd: #e9fff1;
-  --waiverDrop: #ffe9e9;
-  --bracketMatch: #fafeff;
+
+  --transactHeader: #DDF7FF;
+  --draftSwapped: #F8FCFF;
+  --waiverAdd: #E9FFF1;
+  --waiverDrop: #FFE9E9;
+  --bracketMatch: #FAFEFF;
   --matchupSelected: #fff;
+
   --fadeOne: rgba(255, 255, 255, 0) 0%;
   --fadeTwo: rgba(255, 255, 255, 0.7) 50%;
   --fadeThree: rgba(255, 255, 255, 0.9) 90%;
   --fadeFour: rgba(255, 255, 255, 1) 100%;
-  --blueOne: #00316b;
-  --blueTwo: #0082c3;
-  --r1: #f7f9fd;
-  --r2: #fbf7f7;
-  --r3: #f7fbf7;
-  --headerPrimary: #ddedfa;
+
+  /* Main League colors */
+  --blueOne: #7C3AED;
+  --blueTwo: #2563EB;
+
+  --purple: #7C3AED;
+  --purpleDark: #5B21B6;
+  --blue: #2563EB;
+  --blueBright: #38BDF8;
+
+  --neonGreen: #39FF14;
+  --green: #22C55E;
+
+  --background: #F8F7FC;
+  --card: #FFFFFF;
+  --cardHover: #F3F0FF;
+  --textPrimary: #17121F;
+  --textSecondary: #6B6575;
+
+  --r1: #F7F9FD;
+  --r2: #FBF7F7;
+  --r3: #F7FBF7;
+
+  --headerPrimary: #DDF7FF;
   --borderOverride: rgba(0,0,0,.12);
-  --rivalryBack: #f8f8f8;
+  --rivalryBack: #F8F8F8;
 
-  // Chart bar colors
-  --barChartOne: #7fc4f5;
-  --barChartTwo: #5bcff7;
-  --barChartThree: #38daf0;
-  --barChartFour: #2fe2e0;
-  --barChartFive: #4fe9c9;
-  --barChartSix: #79edad;
+  /* Chart colors */
+  --barChartOne: #7FC4F5;
+  --barChartTwo: #5BCFF7;
+  --barChartThree: #38DAF0;
+  --barChartFour: #2FE2E0;
+  --barChartFive: #4FE9C9;
+  --barChartSix: #79EDAD;
 
-  // Comparisson bar colors
-  --compBarOne: #7fc4f5;
-  --compBarTwo: #79edad;
-  --compBarOneText: #446a88;
+  /* Comparison bar colors */
+  --compBarOne: #7FC4F5;
+  --compBarTwo: #79EDAD;
+  --compBarOneText: #446A88;
   --compBarTwoText: #448864;
 
-  // Positions
-  --QBfade: #ff8fb2;
-  --WRfade: #afd4ff;
-  --RBfade: #6ccac1;
-  --TEfade: #ffd6aa;
-  --Kfade: #deb4ff;
-  --DEfadeFfade: #fffbbc;
-  --PICKSfade: #73b647;
-  --CBfade: #ffcc7a;
-  --SSfade: #b7a1db;
-  --FSfade: #ebe7b3;
-  --DEfade: #b1d0e9;
-  --DLfade: #c392d3;
-  --LBfade: #98c097;
+  /* Position colors */
+  --QBfade: #FF8FB2;
+  --WRfade: #AFD4FF;
+  --RBfade: #6CCAC1;
+  --TEfade: #FFD6AA;
+  --Kfade: #DEB4FF;
+  --DEfadeFfade: #FFFbbc;
+  --PICKSfade: #73B647;
+  --CBfade: #FFCC7A;
+  --SSfade: #B7A1DB;
+  --FSfade: #EBE7B3;
+  --DEfade: #B1D0E9;
+  --DLfade: #C392D3;
+  --LBfade: #98C097;
 
-	--QB: #ff2a6d;
-	--WR: #58a7ff;
-	--RB: #00ceb8;
-	--TE: #ffae58;
-	--K: #bd66ff;
-	--Budget: #7947d4;
-	--DEF: #eee45e;
-	--DL: #ff795a;
-	--LB: #6d7df5;
-	--DB: #ff7cb6;
-	--BN: #b6d0eb;
+  --QB: #FF2A6D;
+  --WR: #58A7FF;
+  --RB: #00CEB8;
+  --TE: #FFAE58;
+  --K: #BD66FF;
+  --Budget: #7947D4;
+  --DEF: #EEE45E;
+  --DL: #FF795A;
+  --LB: #6D7DF5;
+  --DB: #FF7CB6;
+  --BN: #B6D0EB;
 }
+
+/* Base page */
 
 html,
 body {
   position: relative;
   margin: 0;
-  background-color: theme.$surface;
-  color: theme.$on-surface;
   min-height: 100vh;
-  background: #f4f4f4;
-  background: linear-gradient(to bottom right, #f4f4f4,#ebebeb );
-  background: -webkit-linear-gradient(to bottom right, #f4f4f4,#ebebeb );
+  background:
+    radial-gradient(
+      circle at 15% 10%,
+      rgba(0, 229, 255, 0.12),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 85% 15%,
+      rgba(109, 40, 217, 0.10),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #F8FCFF 0%,
+      #EEF8FF 50%,
+      #F5F0FF 100%
+    );
+  color: var(--wizard-text);
 }
- 
-//
-// Some defaults that may be helpful to you.
-// If you just want to use these, and not the classes, you can instead just
-// @use '@material/typography/index' as typography, and your CSS file will be smaller.
-//
+
+/* Typography */
+
 html {
   @include typography.typography('body1');
 }
- 
+
 h1 {
   @include typography.typography('headline1');
 }
- 
+
 h2 {
   @include typography.typography('headline2');
 }
- 
+
 h3 {
   @include typography.typography('headline3');
 }
- 
+
 h4 {
   @include typography.typography('headline4');
 }
- 
+
 h5 {
   @include typography.typography('headline5');
 }
- 
+
 h6 {
   @include typography.typography('headline6');
 }
- 
-caption {
-  @include typography.typography('caption');
+
+body {
+  font-family: 'Roboto', sans-serif;
 }
- 
+
+/* Graffiti-style headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Permanent Marker', cursive;
+  letter-spacing: 0.02em;
+  color: var(--wizard-blue);
+}
+
+/* Navigation */
+
+nav,
+.nav,
+.navbar,
+.navigation {
+  font-family: 'Permanent Marker', cursive;
+}
+
+/* Buttons */
+
+button,
+.mdc-button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+/* Links */
+
+a {
+  color: var(--wizard-purple);
+  font-weight: 600;
+}
+
+a:hover {
+  color: var(--wizard-blue-bright);
+}
+
+a:visited {
+  color: var(--wizard-purple);
+}
+
+/* Important buttons */
+
+.mdc-button--raised,
+.primary,
+button.primary {
+  background: var(--wizard-green) !important;
+  color: #07100A !important;
+  border: none !important;
+}
+
+/* Cards */
+
+.mdc-card,
+.card {
+  border-radius: 16px;
+  border: 1px solid var(--wizard-border);
+  box-shadow: var(--wizard-shadow);
+  background: rgba(255, 255, 255, 0.94);
+}
+
+/* Selected / active states */
+
+.active,
+.selected {
+  border-color: var(--wizard-blue) !important;
+}
+
+/* Tables */
+
+th {
+  font-family: 'Permanent Marker', cursive;
+  color: var(--wizard-blue);
+}
+
+/* Success / positive */
+
+.win,
+.winner,
+.positive,
+.success {
+  color: #16A34A;
+}
+
+/* Accent utilities */
+
+.accent-purple {
+  color: var(--wizard-purple);
+}
+
+.accent-blue {
+  color: var(--wizard-blue);
+}
+
+.accent-green {
+  color: var(--wizard-green);
+}
+
+/* Code */
+
 code,
 pre {
   font-family: 'Roboto Mono', monospace;
 }
- 
+
 small {
   font-size: 0.9em;
 }
- 
+
 big {
   font-size: 1.1em;
 }
- 
+
 b,
 strong {
   font-weight: bold;
 }
 
-a {
-  color: #40b3ff;
-}
-a:visited {
-  color: color.scale(#40b3ff, $lightness: -35%);
-}
+/* Outlined buttons */
 
 .mdc-button--outlined:not(:disabled) {
-  background-color: #f9f9f9 !important;
+  background-color: #FFFFFF !important;
 }
