@@ -80,7 +80,7 @@ export const POWER_RANKINGS = {
 			{
 				rank: 9,
 				previousRank: null,
-				team: 'Curious George,
+				team: 'Curious George',
 				commentary: 'Write your Week 1 commentary here.'
 			},
 			{
