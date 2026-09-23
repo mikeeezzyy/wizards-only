@@ -32,37 +32,37 @@ export const POWER_RANKINGS = {
 			{
 				rank: 1,
 				previousRank: null,
-				team: 'Tax Evasion',
+				team: 'connorbrannick',
 				commentary: 'Write your Week 1 commentary here.'
 			},
 			{
 				rank: 2,
 				previousRank: null,
-				team: 'Kupp My Balls',
+				team: 'The Fighting Lil Jonahs',
 				commentary: 'Write your Week 1 commentary here.'
 			},
 			{
 				rank: 3,
 				previousRank: null,
-				team: 'Curious George',
+				team: 'Baumy1220'',
 				commentary: 'Write your Week 1 commentary here.'
 			},
 			{
 				rank: 4,
 				previousRank: null,
-				team: "Ja'Marr Chase Little Kids",
+				team: "The Toledo Whiteskins",
 				commentary: 'Write your Week 1 commentary here.'
 			},
 			{
 				rank: 5,
 				previousRank: null,
-				team: 'The Toledo Whiteskins',
+				team: 'Tax Evasion',
 				commentary: 'Write your Week 1 commentary here.'
 			},
 			{
 				rank: 6,
 				previousRank: null,
-				team: 'The Dykes of Hazard',
+				team: 'thoy113',
 				commentary: 'Write your Week 1 commentary here.'
 			},
 			{
@@ -80,25 +80,25 @@ export const POWER_RANKINGS = {
 			{
 				rank: 9,
 				previousRank: null,
-				team: 'connorbrannick',
+				team: 'Curious George,
 				commentary: 'Write your Week 1 commentary here.'
 			},
 			{
 				rank: 10,
 				previousRank: null,
-				team: 'The Fighting Lil Jonahs',
+				team: 'The Dykes of Hazard',
 				commentary: 'Write your Week 1 commentary here.'
 			},
 			{
 				rank: 11,
 				previousRank: null,
-				team: 'thoy113',
+				team: 'Kupp My Balls',
 				commentary: 'Write your Week 1 commentary here.'
 			},
 			{
 				rank: 12,
 				previousRank: null,
-				team: 'Baumy1220',
+				team: "Ja'Marr Chase Little Kids",
 				commentary: 'Write your Week 1 commentary here.'
 			}
 		]
