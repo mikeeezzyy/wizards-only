@@ -44,7 +44,7 @@ export const POWER_RANKINGS = {
 			{
 				rank: 3,
 				previousRank: null,
-				team: 'Baumy1220'',
+				team: 'Baumy1220',
 				commentary: 'Write your Week 1 commentary here.'
 			},
 			{
