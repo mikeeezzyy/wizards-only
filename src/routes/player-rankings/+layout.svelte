@@ -9,10 +9,8 @@
 	const navItems = [
 	  { label: 'Home', href: '/', icon: '🏈' },
 	  { label: 'Matchups', href: '/matchups', icon: '🏈' },
-	  { label: 'Rosters', href: '/rosters', icon: '🏈' },
 	  { label: 'Rivalry', href: '/rivalry', icon: '🏈' },
 	  { label: 'Power Rankings', href: '/power-rankings', icon: '🏈' },
-	  { label: 'Player Rankings', href: '/player-rankings', icon: '🏈' },
 	  { label: 'League Standings', href: '/standings', icon: '🏈' },
 	  { label: 'League History', href: '/awards', icon: '🏈' },
 	  { label: 'Records', href: '/records', icon: '🏈' },
@@ -108,6 +106,18 @@
 		</div>
 
 
+		<!-- =========================
+		     BOTTOM WIZARD
+		========================== -->
+
+		<div class="sidebar-wizard">
+
+			<img
+				src="/wizard.png"
+				alt="Wizard"
+			/>
+
+		</div>
 
 	</aside>
 
@@ -281,7 +291,7 @@
 
 
 	.brand-year {
-		margin-top: 8px;
+		margin-top: 10px;
 
 		font-family: 'Poppins', sans-serif;
 
@@ -353,9 +363,9 @@
 		display: flex;
 		flex-direction: column;
 
-		gap: 8px;
+		gap: 7px;
 
-		margin-top: 8px;
+		margin-top: 14px;
 	}
 
 
@@ -454,6 +464,43 @@
 	}
 
 
+	/* =================================
+	   WIZARD
+	================================= */
+
+	.sidebar-wizard {
+		width: 100%;
+
+		flex: 1;
+
+		display: flex;
+
+		align-items: flex-end;
+		justify-content: center;
+
+		padding-bottom: 0;
+
+		pointer-events: none;
+	}
+
+	.sidebar-wizard img {
+		display: block;
+
+		/*
+		 * Larger than before so the wizard
+		 * fills the empty lower sidebar.
+		 */
+		width: 150px !important;
+		max-width: 150px !important;
+
+		height: auto;
+
+		max-height: 220px;
+
+		object-fit: contain;
+
+		object-position: bottom center;
+	}
 
 
 	/* =================================
@@ -528,6 +575,12 @@
 			font-size: 12px;
 		}
 
+		.sidebar-wizard img {
+			width: 135px !important;
+			max-width: 135px !important;
+
+			max-height: 200px;
+		}
 	}
 
 
@@ -592,6 +645,9 @@
 			font-size: 12px;
 		}
 
+		.sidebar-wizard {
+			display: none;
+		}
 
 		.brand {
 			padding-bottom: 14px;

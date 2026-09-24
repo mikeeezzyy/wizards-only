@@ -1,7 +1,31 @@
 <script>
-	import { Resources } from '$lib/components';
+	const resources = [
+		{
+			title: 'Sleeper',
+			href: 'https://sleeper.com'
+		},
+		{
+			title: 'FantasyPros Dynasty Rankings',
+			href: 'https://www.fantasypros.com/nfl/rankings/dynasty-overall.php'
+		},
+		{
+			title: 'FantasyCalc Trade Calculator',
+			href: 'https://fantasycalc.com/trade-calculator'
+		},
+		{
+			title: 'KeepTradeCut Dynasty Rankings',
+			href: 'https://keeptradecut.com/dynasty-rankings?page=0&filters=RB'
+		},
+		{
+			title: 'Dynasty League Football Trade Analyzer',
+			href: 'https://dynastyleaguefootball.com/trade-analyzer/'
+		},
+		{
+			title: 'CLICK HERE FOR $500',
+			href: 'https://www.youtube.com/watch?v=QlJXhWQZWnQ&t=1s'
+		}
+	];
 </script>
-
 
 <div class="resources-page">
 
@@ -11,15 +35,129 @@
 		<div class="cloud cloud-two"></div>
 
 		<div class="resources-content">
-			<Resources />
+
+			<h1 class="resources-title">
+				HELPFUL DYNASTY<br />
+				RESOURCES
+			</h1>
+
+			<div class="resources-list">
+
+				{#each resources as resource}
+
+					<a
+						class="resource-link"
+						href={resource.href}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+
+						<span class="resource-icon" aria-hidden="true">
+							{#if resource.title === 'Sleeper'}🏈
+							{:else if resource.title === 'FantasyPros Dynasty Rankings'}📊
+							{:else if resource.title === 'FantasyCalc Trade Calculator'}🧮
+							{:else if resource.title === 'KeepTradeCut Dynasty Rankings'}🎯
+							{:else if resource.title === 'Dynasty League Football Trade Analyzer'}🔄
+							{:else}💰
+							{/if}
+						</span>
+
+						<span>{resource.title}</span>
+
+					</a>
+
+				{/each}
+
+			</div>
+
 		</div>
 
 	</section>
 
 </div>
 
-
 <style>
+
+/* RESOURCES HEADER */
+.resources-title {
+    margin: 0 auto 38px;
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 42px;
+    line-height: 1.05;
+    letter-spacing: 1px;
+    color: #35116b;
+}
+
+/* SIX RESOURCE LINKS */
+.resources-list {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid rgba(44, 69, 145, 0.18);
+    box-shadow: 0 4px 14px rgba(44, 69, 145, 0.14);
+    background: rgba(255, 255, 255, 0.72);
+}
+
+.resource-link {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    min-height: 60px;
+    padding: 0 24px;
+    border-bottom: 1px solid rgba(44, 69, 145, 0.18);
+    color: #2c4778;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.resource-link:last-child {
+    border-bottom: none;
+}
+
+.resource-link:hover {
+    background: rgba(235, 241, 255, 0.85);
+    color: #5126b8;
+}
+
+.resource-icon {
+    flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #285fc4, #6d28d9);
+    color: #fff;
+    font-size: 21px;
+    line-height: 1;
+    box-shadow: 0 4px 10px rgba(53, 17, 107, 0.20);
+    border: 2px solid rgba(255, 255, 255, 0.75);
+}
+
+@media (max-width: 700px) {
+    .resources-title {
+        font-size: 32px;
+        margin-bottom: 28px;
+    }
+
+    .resources-list {
+        width: 100%;
+    }
+
+    .resource-link {
+        min-height: 54px;
+        padding: 0 14px;
+        gap: 12px;
+        font-size: 15px;
+    }
+}
+
+
 
 	/* =================================
 	   PAGE
@@ -281,5 +419,6 @@
 			font-size: 15px !important;
 		}
 	}
+
 
 </style>

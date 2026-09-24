@@ -110,20 +110,25 @@
 
 <style>
 	h5 {
-    text-align: center;
+		text-align: center;
 		margin: 0.2em auto;
 	}
-	
+
 	.teamAvatar {
 		vertical-align: middle;
 		border-radius: 50%;
-		height: 40px;
-		margin-right: 15px;
-		border: 0.25px solid #777;
+		height: 42px;
+		width: 42px;
+		object-fit: cover;
+		margin-right: 12px;
+		border: 2px solid rgba(255,255,255,0.85);
+		box-shadow: 0 3px 8px rgba(30,64,175,0.18);
 	}
 
 	.team {
-		margin: 4px 10px 10px;
+		margin: 0;
+		width: 100%;
+		max-width: 430px;
 	}
 
 	:global(.clickable) {
@@ -131,83 +136,53 @@
 	}
 
 	:global(.teamInner) {
-		box-shadow: 0px 3px 3px -2px var(--boxShadowOne), 0px 3px 4px 0px var(--boxShadowTwo), 0px 1px 8px 0px var(--boxShadowThree);
 		display: block;
-	    margin: 0 auto;
+		margin: 0 auto;
+		width: 100% !important;
+		border-radius: 18px !important;
+		overflow: hidden !important;
+		background: #fff !important;
+		box-shadow: 0 8px 24px rgba(44,69,145,0.14) !important;
+		border: 1px solid rgba(73,126,213,0.16);
 	}
 
-	.rosterBench{
+	.rosterBench {
 		overflow: hidden;
 		width: 100%;
 		display: block;
 		transition: max-height 0.7s ease-in-out;
 	}
 
-	:global(.r_1) {
-		text-align: center;
-		background-color: var(--r1);
-	}
-
-	:global(.r_2) {
-		text-align: center;
-		background-color: var(--r2);
-	}
-
+	:global(.r_1),
+	:global(.r_2),
 	:global(.r_3) {
-		text-align: center;
-		background-color: var(--r3);
+		text-align: left;
+		background: linear-gradient(135deg, #285fc4, #5b189c) !important;
+		color: #fff !important;
 	}
 
 	h3 {
-		font-size: 1.5em;
-		font-weight: 500;
-		margin: 12px 0;
+		display: flex;
+		align-items: center;
+		font-size: 1.18rem;
+		font-weight: 800;
+		line-height: 1.1;
+		margin: 0;
+		padding: 9px 6px;
+		color: #fff;
+		font-family: "Poppins", sans-serif;
 	}
 
 	h5 {
-		font-size: 1.2em;
+		font-size: 0.95rem;
+		font-weight: 800;
 		text-align: center;
-	}
-
-	@media (max-width: 500px) {
-		.team {
-			font-size: 0.9em;
-		}
-
-		h3 {
-			font-size: 1.3em;
-			margin: 3px 0;
-		}
-
-		h5 {
-			font-size: 1.1em;
-		}
-	}
-
-	@media (max-width: 340px) {
-		h3 {
-			font-size: 1.1em;
-			margin: 6px 0;
-		}
-
-		h5 {
-			font-size: 1em;
-		}
-	}
-
-	@media (max-width: 400px) {
-		.team {
-			margin: 4px auto 10px;
-		}
+		margin: 9px 0;
 	}
 
 	:global(.icon) {
 		vertical-align: middle;
-	}
-
-	.italic {
-		color: #aaa;
-		font-style: italic;
+		margin-right: 5px;
 	}
 
 	:global(.interactive) {
@@ -216,7 +191,29 @@
 	}
 
 	:global(.bench) {
-		background-color: var(--ir);
+		background-color: #f5f8ff !important;
+	}
+
+	.italic {
+		color: rgba(255,255,255,0.72);
+		font-style: italic;
+		font-weight: 600;
+	}
+
+	@media (max-width: 900px) {
+		.team {
+			max-width: 420px;
+		}
+	}
+
+	@media (max-width: 500px) {
+		.team {
+			max-width: 100%;
+		}
+
+		h3 {
+			font-size: 1.05rem;
+		}
 	}
 </style>
 
@@ -243,7 +240,7 @@
 		</Body>
 	</DataTable>
 	<div class="rosterBench" style="max-height: {selected}">
-		<DataTable class="teamInner" style="width: 380px" >
+		<DataTable class="teamInner" >
 			<Body class="bench">
 				<!-- 	Bench	 -->
 				{#each finalBench as bench}

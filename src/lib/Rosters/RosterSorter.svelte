@@ -102,43 +102,60 @@
 	}
 
 	.division-heading {
+		position: relative;
+		overflow: hidden;
 		display: flex;
 		align-items: center;
 		gap: 12px;
-		margin: 0 0 14px;
-		padding: 12px 18px;
-		border-radius: 16px;
-		background: linear-gradient(
-			90deg,
-			rgba(124, 58, 237, 0.96),
-			rgba(41, 182, 246, 0.94)
-		);
-		box-shadow: 0 8px 20px rgba(30, 64, 175, 0.12);
+		margin: 0 0 16px;
+		padding: 16px 20px;
+		border-radius: 18px;
+		background: rgba(255, 255, 255, 0.94);
+		border: 1px solid rgba(73, 126, 213, 0.16);
+		box-shadow: 0 10px 30px rgba(30, 64, 175, 0.10);
 	}
 
 	.division-heading::before {
 		content: "🏈";
 		font-size: 1.15rem;
+		position: relative;
+		z-index: 1;
+	}
+
+	.division-heading::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		background:
+			radial-gradient(circle at 15% 20%, rgba(41, 182, 246, 0.10), transparent 28%),
+			radial-gradient(circle at 85% 15%, rgba(124, 58, 237, 0.09), transparent 30%);
+		pointer-events: none;
 	}
 
 	.division-heading h2 {
+		position: relative;
+		z-index: 1;
 		margin: 0;
-		color: #fff;
+		color: #35116B;
 		font-family: "Luckiest Guy", "Permanent Marker", cursive;
-		font-size: clamp(1.25rem, 2.4vw, 1.8rem);
+		font-size: clamp(1.35rem, 2.4vw, 1.8rem);
 		font-weight: 400;
 		letter-spacing: 0.04em;
-		text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
 	}
 
 	.division {
-		display: flex;
-		justify-content: center;
-		align-items: flex-start;
-		flex-wrap: wrap;
-		gap: 16px;
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		align-items: start;
+		gap: 20px;
 		width: 100%;
 		margin: 0 auto;
+	}
+
+	@media (max-width: 1100px) {
+		.division {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
 	}
 
 	@media (max-width: 700px) {
@@ -152,7 +169,8 @@
 		}
 
 		.division {
-			gap: 10px;
+			grid-template-columns: 1fr;
+			gap: 14px;
 		}
 	}
 </style>
