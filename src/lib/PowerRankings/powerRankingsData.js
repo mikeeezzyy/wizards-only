@@ -331,7 +331,83 @@ export const POWER_RANKINGS = {
 				previousRank: 12,
 				team: 'Kupp My Balls',
 				commentary: 'I genuinely do not know what else to say at this point. Jack put up another sub-100 point performance and is now 0-4, with the lowest point total in the entire league by more than 40 points. Drake Maye finally showed some life with 29.2 points, but Jaxon Smith-Njigba, who has basically been the entire offense for three straight weeks, managed only 11.6 this time around. The season is still young, but at this point Jack needs to start making some moves because this team is in serious trouble.'
-			}
-		]
-	}
+			},
+]
+},
+			5: {
+	rankings: [
+		{
+			rank: 1,
+			previousRank: 1,
+			team: 'connorbrannick',
+			commentary: 'After taking his first loss of the season last week, Connor responded with a massive 189 points to take down the Tax Evaders and remind everyone why he is still the clear number one. Jahmyr Gibbs put up another ridiculous 39.7 points, marking his fourth week finishing among Connor’s top three scorers. Connor now has 882.9 points through five weeks, nearly 176 points per game, and the highest-scoring team in the league by a mile. The loss last week looks more like a minor speed bump than the beginning of a downfall.'
+		},
+		{
+			rank: 2,
+			previousRank: 6,
+			team: 'Thoy113',
+			commentary: 'TOM IS ON A FUCKING TEAR. After handing Connor his first loss last week, Tom somehow topped himself with 193.5 points, the highest score of the week and the second-highest single-week score of the season. Puka Nacua and Bucky Irving both went over 33 points, while Jared Goff added nearly 29 of his own. This is back-to-back weeks over 180 points after looking completely dead in the water earlier in the season. Tom has gone from 0-2 to 3-2, and I am officially done doubting this team. What the hell has gotten into him?'
+		},
+		{
+			rank: 3,
+			previousRank: 4,
+			team: "Ja’Marr Chase Little Kids",
+			commentary: 'Ballow just keeps winning. After an 81-point disaster in Week 1, he has now rattled off four straight victories and sits at 4-1, tied for the best record in the league. This was not exactly a dominant performance at 124.3 points, but it was more than enough to take down the Fighting Lil Jonahs, who managed the lowest score of the week. Trevor Lawrence and Jason Myers led the way with 23 points apiece, while Ja’Marr Chase chipped in 17.7. The crazy part is that Ballow is winning without needing massive performances from his biggest name. If this team starts putting up 150 consistently, look out.'
+		},
+		{
+			rank: 4,
+			previousRank: 5,
+			team: 'Baumy1220',
+			commentary: 'Baum is quietly putting together a pretty solid season. After bouncing back with 163.5 last week, he followed it up with another win, grinding out a six-point victory over the Dykes of Hazard. Derrick Henry led the way with 22 points, and the rest of the lineup did just enough to get the job done. At 3-2 with 683.4 points, Baum has the third-highest scoring total in the league, which makes the two losses a little less concerning. This team has shown it can put up huge numbers, and even when the offense is not firing on all cylinders, it is finding ways to win.'
+		},
+		{
+			rank: 5,
+			previousRank: 9,
+			team: 'Slim Pickens',
+			commentary: 'Slim Pickens survives by the skin of his teeth. After a disappointing loss to the Dykes last week, Slim bounced back with a 130.4-point performance to beat Kupp My Balls by just 1.4 points. Jayden Daniels led the way with 33.3, while Trey McBride and Chimere Dike provided some solid support. Slim is now 3-2 and has won three of his last four games, but this matchup was way closer than it needed to be. Credit where it is due, though: a win is a win, and Slim is starting to look like a legitimate playoff contender.'
+		},
+		{
+			rank: 6,
+			previousRank: 3,
+			team: 'Tax Evasion',
+			commentary: 'Well, the Tax Evaders ran into a buzzsaw this week. Putting up 131 points is usually enough to stay competitive, but unfortunately for them, Connor decided to drop 189. Malik Nabers led the team with 26.6, and Davante Adams added another 20.6, but the rest of the lineup could not keep pace. At 3-2, the Evaders are still in a good position, but they have now dropped two of their last three games and sit well behind the league’s top scorers in total points. The record looks good, but I would like to see this offense start putting together a truly dominant performance before buying all the way in.'
+		},
+		{
+			rank: 7,
+			previousRank: 2,
+			team: 'The Toledo Whiteskins',
+			commentary: 'Oof. The Whiteskins have officially hit a rough patch, dropping their second game in three weeks after falling to the #1 Woman Respector. Danny managed just 108.8 points, his lowest score of the season, despite Christian Watson and Matthew Stafford combining for over 57. The supporting cast simply did not show up, and the result was a frustrating loss to a team that desperately needed a win. They are still 3-2 and have allowed the fewest points against in the league, so I am not ready to panic just yet. But after three straight wins, this is a reminder that the margin for error is getting smaller.'
+		},
+		{
+			rank: 8,
+			previousRank: 10,
+			team: 'Curious George',
+			commentary: 'Ryne cannot catch a break. Curious George put up 152 points this week, his second-highest score of the season, and still got absolutely smoked by Tom’s 193.5-point explosion. Jaylen Warren had a monster 35.3-point performance, while Joe Burrow added another 25.6, so it is not like this team failed to show up. At 1-4, the record looks brutal, but Curious has scored the fourth-most points in the league and has also allowed the most. This is starting to feel less like a bad roster and more like a team cursed by the schedule. At some point, though, Ryne needs a win before the season gets away from him.'
+		},
+		{
+			rank: 9,
+			previousRank: 7,
+			team: 'The Dykes of Hazard',
+			commentary: 'Another week, another painfully close loss for the Dykes. After putting together a strong 134-point performance last week, they managed 122 this time around and fell to Baum by just six points. Jacoby Brissett surprisingly led the way with 27.3, while Tyler Warren and Drake London chipped in nearly 20 and 19, respectively. At 2-3, the Dykes are starting to fall behind the playoff pack, but their scoring has been fairly consistent outside of one down week. They are not far off, but these close losses are starting to add up. Eventually, they need to find a way to finish these games.'
+		},
+		{
+			rank: 10,
+			previousRank: 8,
+			team: 'The Fighting Lil Jonahs',
+			commentary: 'This is getting ugly for the reigning champs. The Lil Jonahs put up just 104.6 points this week, the lowest score in the entire league, and lost their second straight game. Parker Washington was the lone bright spot with 29 points, while Bijan Robinson managed just 15.8 and the rest of the lineup failed to provide much help. The inconsistency has been a problem all season, with scores ranging from 96 to 158 and now back down to 104. At 2-3, they are still within striking distance, but this roster needs to figure things out quickly. The talent is there, but right now the results are not.'
+		},
+		{
+			rank: 11,
+			previousRank: 11,
+			team: '#1 Woman Respector',
+			commentary: 'FINALLY, A WIN! After three straight losses, the #1 Woman Respector got back on track with a 127.7-point performance to take down the Whiteskins. Josh Allen was back to being Josh Allen with 34.5 points, while George Pickens added a strong 26 to help get the job done. It was not a perfect performance, but after weeks of frustration, this is exactly the kind of result this team needed. At 2-3, there is still plenty of work to do, but maybe this is the start of a turnaround. The name might say #1, and for the first time in a while, the team is at least giving us something to believe in.'
+		},
+		{
+			rank: 12,
+			previousRank: 12,
+			team: 'Kupp My Balls',
+			commentary: 'JACK. HOW DO YOU KEEP DOING THIS? Kupp My Balls finally put together a respectable performance with 129 points, but somehow still lost by 1.4 points to Slim Pickens. Drake Maye exploded for 39.5, and Jaxon Smith-Njigba added another 21.8, so this was absolutely a winnable matchup. Instead, Jack is now 0-5, and the season is starting to slip away fast. The silver lining is that this was his second-highest score of the season, so there are signs of life. But at some point, moral victories need to turn into actual victories, because this losing streak is getting ridiculous.'
+		}
+	]
+}
 };
