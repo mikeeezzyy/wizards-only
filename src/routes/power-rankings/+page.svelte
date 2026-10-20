@@ -477,47 +477,23 @@
 }
 
 
-	function getStreak(
-		rosterId,
-		playerId,
-		targetWeek,
-		playerStats
-	) {
-
+	function getStreak(rosterId, playerId, targetWeek, categoryStats) {
+		// categoryStats is either weeklyTopPlayers or weeklyBenchPlayers.
+		// Because these are separate inputs, a player switching between the
+		// starter and bench Top 3 will start a new streak in the new category.
 		let streak = 0;
+		const rosterKey = String(rosterId);
+		const playerKey = String(playerId);
 
+		for (let w = Number(targetWeek); w >= 1; w--) {
+			const categoryPlayers = categoryStats?.[w]?.[rosterKey] || [];
+			const wasInTopThree = categoryPlayers.some(
+				(player) => String(player?.playerId) === playerKey
+			);
 
-		for (
-			let w = targetWeek;
-			w >= 1;
-			w--
-		) {
-
-			const weekPlayers =
-				playerStats?.[w]?.[
-					String(rosterId)
-				] || [];
-
-
-			if (
-				weekPlayers.some(
-					(player) =>
-						String(
-							player.playerId
-						) ===
-						String(playerId)
-				)
-			) {
-
-				streak += 1;
-
-			} else {
-
-				break;
-
-			}
+			if (!wasInTopThree) break;
+			streak += 1;
 		}
-
 
 		return streak;
 	}
@@ -558,13 +534,9 @@
 						playerData
 					),
 
-				streak:
-					getStreak(
-						rosterId,
-						player.playerId,
-						targetWeek,
-						playerStats
-					)
+				// Streaks are based only on this category's Top 3 list.
+				// Starter and bench streaks therefore reset independently.
+				streak: getStreak(rosterId, player.playerId, targetWeek, playerStats)
 			})
 		);
 	}

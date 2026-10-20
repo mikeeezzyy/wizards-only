@@ -409,5 +409,81 @@ export const POWER_RANKINGS = {
 			commentary: 'JACK. HOW DO YOU KEEP DOING THIS? Kupp My Balls finally put together a respectable performance with 129 points, but somehow still lost by 1.4 points to Slim Pickens. Drake Maye exploded for 39.5, and Jaxon Smith-Njigba added another 21.8, so this was absolutely a winnable matchup. Instead, Jack is now 0-5, and the season is starting to slip away fast. The silver lining is that this was his second-highest score of the season, so there are signs of life. But at some point, moral victories need to turn into actual victories, because this losing streak is getting ridiculous.'
 		}
 	]
-}
+},
+6: {
+	rankings: [
+		{
+			rank: 1,
+			previousRank: 1,
+			team: 'connorbrannick',
+			commentary: 'Connor stays on top, and at this point the rest of the league is chasing him. Even with a more modest Week 6 score of 132.46, the season-long production has been ridiculous at roughly 169 points per game. One week does not erase the gap he has built, and until somebody consistently matches his scoring ceiling, the number one spot is his to lose.'
+		},
+		{
+			rank: 2,
+			previousRank: 2,
+			team: 'Thoy113',
+			commentary: 'Tom has officially gone from early-season disaster to one of the most dangerous teams in the league. The Week 6 score of 133.58 was not another 190-point explosion, but it was enough to keep the momentum going. The turnaround has been real, and after the way this team looked early on, nobody should be eager to face him right now. Tom also recently acquired RB Jaylen Warren from Ryne in exchange for two future draft picks. The real question here is whether he can keep this level of production up for another month.'
+		},
+		{
+			rank: 3,
+			previousRank: 9,
+			team: 'The Dykes of Hazard',
+			commentary: 'The Dykes make a major jump this week, climbing from ninth to third. A 137.48-point performance gives this team another solid scoring week and puts some distance between its current form and the frustrating close losses that defined the earlier stretch. This is the kind of consistency that can turn a fringe playoff team into a real threat. The ranking is aggressive, but the recent direction is encouraging.'
+		},
+		{
+			rank: 4,
+			previousRank: 7,
+			team: 'The Toledo Whiteskins',
+			commentary: 'The Whiteskins climb back into the top four after a steady 132.48-point week. This roster has shown it can compete with just about anyone, and the scoring remains respectable even when it is not putting up a monster total. The biggest question is whether the lineup can find another gear against the league’s heavy hitters. For now, this is a solid bounce-back in the rankings and a reminder that Danny should not be written off.'
+		},
+		{
+			rank: 5,
+			previousRank: 4,
+			team: 'Baumy1220',
+			commentary: 'Baum takes a small step back after managing just 103.80 points in Week 6. The season-long numbers still show a team capable of competing, but this was the sort of performance that makes it hard to justify a spot near the very top. There is enough talent here to rebound quickly, and one ugly week should not erase the stronger performances from earlier in the season. Still, Baum needs a response next week to stop this slide from becoming a trend.'
+		},
+		{
+			rank: 6,
+			previousRank: 3,
+			team: 'Ja’Marr Chase Little Kids',
+			commentary: 'Ballow drops three spots after a 114.54-point week that fell short of the standard set earlier in the season. This team had built a strong position with consistent wins, but the margin for error gets smaller when the weekly scoring dips. The upside is still there, and the roster has already shown it can win without needing every star to explode at once. A bounce-back next week would quickly quiet the concerns.'
+		},
+		{
+			rank: 7,
+			previousRank: 5,
+			team: 'Slim Pickens',
+			commentary: 'Slim slides a couple of spots after putting up 113.30 points. The recent stretch has been encouraging overall, but this was not the kind of score that pushes a team up the rankings in a competitive league. The good news is that the season-long production remains respectable, and this roster has already demonstrated the ability to put together big weeks. Slim is still in the playoff conversation, but another quiet outing could make the middle of these rankings even more crowded.'
+		},
+		{
+			rank: 8,
+			previousRank: 6,
+			team: 'Tax Evasion',
+			commentary: 'The Tax Evaders fall to eighth after another week that did not quite deliver the statement performance this roster needs. A 119.12-point total is not catastrophic, but it leaves little room for error against the stronger teams in the league. After losing Jalen Hurts and Davante Adams, the Tax Evaders traded away a 3rd round pick to add WR Luther Burden to the squad. There is enough talent here to make a run, yet the recent scoring has not matched the expectations. The season is far from over, but it is time for the Evaders to start turning potential into production.'
+		},
+		{
+			rank: 9,
+			previousRank: 8,
+			team: 'Curious George',
+			commentary: 'Curious George moves down one spot despite scoring a respectable 124.32 points. After the tough loss, it appears Ryne is waiving the white flag by trading away Jaylen Warren and Luther Burden for future draft capital. The season has been a frustrating combination of capable scoring and disappointing results, and that makes it difficult to know exactly what to make of this roster. There is enough here to beat good teams on the right week, but the record leaves very little breathing room. Ryne needs a win soon to keep the season from slipping away, because strong point totals only mean so much without results.'
+		},
+		{
+			rank: 10,
+			previousRank: 10,
+			team: 'The Fighting Lil Jonahs',
+			commentary: 'The reigning champs remain stuck near the bottom after scoring just 105.74 points in Week 6. The issue has been consistency: this team has shown flashes of being competitive, but too many lineups have come up short when it matters. There is still time to turn things around, but the championship reputation is not going to win any matchups by itself. The Lil Jonahs need a convincing performance soon to prove this season is not getting away from them.'
+		},
+		{
+			rank: 11,
+			previousRank: 12,
+			team: '(Maye) B Win 1?',
+			commentary: 'The newly renamed (Maye) B Win 1? moves up a spot, taking over eleventh after the former Kupp My Balls identity. A new name is a fresh start, but the team still needs results on the field to make a meaningful climb. The bottom of the rankings is not out of reach, and one strong week can change the outlook quickly. For now, this is a small step in the right direction, with plenty left to prove.'
+		},
+		{
+			rank: 12,
+			previousRank: 11,
+			team: '#1 Woman Respector',
+			commentary: 'The Woman Respector falls to last after a rough Week 6 score of 95.40. It is hard to climb the rankings when the weekly production lands below 100, especially with several teams in the middle of the pack putting up much stronger totals. The season is not necessarily lost, but this roster needs a turnaround quickly. A big week could make the standings feel very different; another performance like this would make the climb much harder.'
+		}
+	]
+},
 };
