@@ -29,461 +29,180 @@ export const POWER_RANKINGS = {
 
 	1: {
 		rankings: [
-			{
-				rank: 1,
-				previousRank: null,
-				team: 'connorbrannick',
-				commentary: 'Commish sucks, no week 1 commentary'
-			},
-			{
-				rank: 2,
-				previousRank: null,
-				team: 'The Fighting Lil Jonahs',
-				commentary: 'Commish sucks, no week 1 commentary'
-			},
-			{
-				rank: 3,
-				previousRank: null,
-				team: 'Baumy1220',
-				commentary: 'Commish sucks, no week 1 commentary'
-			},
-			{
-				rank: 4,
-				previousRank: null,
-				team: "The Toledo Whiteskins",
-				commentary: 'Commish sucks, no week 1 commentary'
-			},
-			{
-				rank: 5,
-				previousRank: null,
-				team: 'Tax Evasion',
-				commentary: 'Commish sucks, no week 1 commentary'
-			},
-			{
-				rank: 6,
-				previousRank: null,
-				team: 'thoy113',
-				commentary: 'Commish sucks, no week 1 commentary'
-			},
-			{
-				rank: 7,
-				previousRank: null,
-				team: '#1 Woman Respector',
-				commentary: 'Commish sucks, no week 1 commentary'
-			},
-			{
-				rank: 8,
-				previousRank: null,
-				team: 'Slim Pickens',
-				commentary: 'Commish sucks, no week 1 commentary'
-			},
-			{
-				rank: 9,
-				previousRank: null,
-				team: 'Curious George',
-				commentary: 'Commish sucks, no week 1 commentary'
-			},
-			{
-				rank: 10,
-				previousRank: null,
-				team: 'The Dykes of Hazard',
-				commentary: 'Commish sucks, no week 1 commentary'
-			},
-			{
-				rank: 11,
-				previousRank: null,
-				team: 'Kupp My Balls',
-				commentary: 'Commish sucks, no week 1 commentary'
-			},
-			{
-				rank: 12,
-				previousRank: null,
-				team: "Ja'Marr Chase Little Kids",
-				commentary: 'Commish sucks, no week 1 commentary'
-			}
+			{ rank: 1, previousRank: null, team: 'connorbrannick', commentary: 'Commish sucks, no week 1 commentary' },
+			{ rank: 2, previousRank: null, team: 'The Fighting Lil Jonahs', commentary: 'Commish sucks, no week 1 commentary' },
+			{ rank: 3, previousRank: null, team: 'Baumy1220', commentary: 'Commish sucks, no week 1 commentary' },
+			{ rank: 4, previousRank: null, team: 'The Toledo Whiteskins', commentary: 'Commish sucks, no week 1 commentary' },
+			{ rank: 5, previousRank: null, team: 'Tax Evasion', commentary: 'Commish sucks, no week 1 commentary' },
+			{ rank: 6, previousRank: null, team: 'thoy113', commentary: 'Commish sucks, no week 1 commentary' },
+			{ rank: 7, previousRank: null, team: '#1 Woman Respector', commentary: 'Commish sucks, no week 1 commentary' },
+			{ rank: 8, previousRank: null, team: 'Slim Pickens', commentary: 'Commish sucks, no week 1 commentary' },
+			{ rank: 9, previousRank: null, team: 'Curious George', commentary: 'Commish sucks, no week 1 commentary' },
+			{ rank: 10, previousRank: null, team: 'The Dykes of Hazard', commentary: 'Commish sucks, no week 1 commentary' },
+			{ rank: 11, previousRank: null, team: 'Kupp My Balls', commentary: 'Commish sucks, no week 1 commentary' },
+			{ rank: 12, previousRank: null, team: "Ja'Marr Chase Little Kids", commentary: 'Commish sucks, no week 1 commentary' }
 		]
 	},
 
 	2: {
 		rankings: [
-			{
-				rank: 1,
-				previousRank: 1,
-				team: 'connorbrannick',
-				commentary: "Dominant performance in back to back weeks for Connor. He appears to be picking up right where he left off last regular season. Lot of momentum heading into a big division matchup against Jack."
-			},
-			{
-				rank: 2,
-				previousRank: 5,
-				team: 'Tax Evasion',
-				commentary: "I used to pray for times like this, to rhyme like this. So I had to grind like that to shine like this. In a matter of time I spent on some locked-up shit. In the back of the paddy wagon, cuffs locked on wrists. Seen my dreams unfold, nightmares come true. It was time to marry the game and I said, Yeah, I do. If you want it, you gotta see it with a clear-eyed view Got a shorty, she tryna bless me like I said achoo."
-			},
-			{
-				rank: 3,
-				previousRank: 4,
-				team: 'The Toledo Whiteskins',
-				commentary: 'Tough loss for Danny but respectable performance. Two back to back solid weeks, and this team looks pretty lethal. Arguably the best RB room in the league.'
-			},
-			{
-				rank: 4,
-				previousRank: 6,
-				team: 'Thoy113',
-				commentary: 'The total points may not show it, but this team is pretty nasty. Tough loss here but these guys should be happy with the direction they are headed right now. Good work Tom.'
-			},
-			{
-				rank: 5,
-				previousRank: 12,
-				team: "Ja’Marr Chase Little Kids",
-				commentary: 'What a huge performance here by Ballow. Things looked quite grim after week 1, but this was a hell of a bounce back. It is tough to tell if this team is legit, with a nearly 70 point difference between week 1 and 2, but they will look to build on this performance heading into week 3.'
-			},
-			{
-				rank: 6,
-				previousRank: 3,
-				team: 'Baumy1220',
-				commentary: 'Tough division loss for Mr Baum but he is looking solid. Always bet on Derrick Henry to do his thang.'
-			},
-			{
-				rank: 7,
-				previousRank: 7,
-				team: '#1 Woman Respector',
-				commentary: 'ICEMAN! The #1 Woman Respector showed up big in week 2, sliding by the Dykes of Hazard by less than 1 point. This guy knows how to finish games. He will look to keep things rolling in a big week 3 division matchup. '
-			},
-			{
-				rank: 8,
-				previousRank: 2,
-				team: 'The Fighting Lil Jonahs',
-				commentary: 'The Fighting Lil Jonahs were lucky to hang on to their division lead by a slim margin, but this was a disgusting performance from the reigning champ.'
-			},
-			{
-				rank: 9,
-				previousRank: 8,
-				team: 'Slim Pickens',
-				commentary: 'Slim Pickens with the slim winnins, lucky to come out alive this week. Outside of Ceedee, not too much to smile about right now. This team will be on the hunt for a new QB to turn things around after Jayden Daniels suffered a brutal injury.'
-			},
-			{
-				rank: 10,
-				previousRank: 9,
-				team: 'Curious George',
-				commentary: 'Curious George has had quite an eventful end to his offseason, with a blockbuster trade and unexpected signing of Amon Ra. The potential is definitely there, and this is a huge step up from last season, but he will need a statement win to get some movement in the rankings.'
-			},
-			{
-				rank: 11,
-				previousRank: 10,
-				team: 'The Dykes of Hazard',
-				commentary: 'Absolutely hate to see this close of a loss to a division rival, but on the brightside, the Dykes have the #1 RB in the league right now.'
-			},
-			{
-				rank: 12,
-				previousRank: 11,
-				team: "Kupp My Balls",
-				commentary: 'No surpises here. Tough week 2 for Jack as he gets stomped by former WR Amon Ra, while Drake Maye put up a whopping 9 points. Will Jack secure a win this season? Or is this the end?'
-			}
+			{ rank: 1, previousRank: 1, team: 'connorbrannick', commentary: "Dominant performance in back to back weeks for Connor. He appears to be picking up right where he left off last regular season. Lot of momentum heading into a big division matchup against Jack." },
+			{ rank: 2, previousRank: 5, team: 'Tax Evasion', commentary: "I used to pray for times like this, to rhyme like this. So I had to grind like that to shine like this. In a matter of time I spent on some locked-up shit. In the back of the paddy wagon, cuffs locked on wrists. Seen my dreams unfold, nightmares come true. It was time to marry the game and I said, Yeah, I do. If you want it, you gotta see it with a clear-eyed view Got a shorty, she tryna bless me like I said achoo." },
+			{ rank: 3, previousRank: 4, team: 'The Toledo Whiteskins', commentary: 'Tough loss for Danny but respectable performance. Two back to back solid weeks, and this team looks pretty lethal. Arguably the best RB room in the league.' },
+			{ rank: 4, previousRank: 6, team: 'Thoy113', commentary: 'The total points may not show it, but this team is pretty nasty. Tough loss here but these guys should be happy with the direction they are headed right now. Good work Tom.' },
+			{ rank: 5, previousRank: 12, team: "Ja’Marr Chase Little Kids", commentary: 'What a huge performance here by Ballow. Things looked quite grim after week 1, but this was a hell of a bounce back. It is tough to tell if this team is legit, with a nearly 70 point difference between week 1 and 2, but they will look to build on this performance heading into week 3.' },
+			{ rank: 6, previousRank: 3, team: 'Baumy1220', commentary: 'Tough division loss for Mr Baum but he is looking solid. Always bet on Derrick Henry to do his thang.' },
+			{ rank: 7, previousRank: 7, team: '#1 Woman Respector', commentary: 'ICEMAN! The #1 Woman Respector showed up big in week 2, sliding by the Dykes of Hazard by less than 1 point. This guy knows how to finish games. He will look to keep things rolling in a big week 3 division matchup. ' },
+			{ rank: 8, previousRank: 2, team: 'The Fighting Lil Jonahs', commentary: 'The Fighting Lil Jonahs were lucky to hang on to their division lead by a slim margin, but this was a disgusting performance from the reigning champ.' },
+			{ rank: 9, previousRank: 8, team: 'Slim Pickens', commentary: 'Slim Pickens with the slim winnins, lucky to come out alive this week. Outside of Ceedee, not too much to smile about right now. This team will be on the hunt for a new QB to turn things around after Jayden Daniels suffered a brutal injury.' },
+			{ rank: 10, previousRank: 9, team: 'Curious George', commentary: 'Curious George has had quite an eventful end to his offseason, with a blockbuster trade and unexpected signing of Amon Ra. The potential is definitely there, and this is a huge step up from last season, but he will need a statement win to get some movement in the rankings.' },
+			{ rank: 11, previousRank: 10, team: 'The Dykes of Hazard', commentary: 'Absolutely hate to see this close of a loss to a division rival, but on the brightside, the Dykes have the #1 RB in the league right now.' },
+			{ rank: 12, previousRank: 11, team: 'Kupp My Balls', commentary: 'No surpises here. Tough week 2 for Jack as he gets stomped by former WR Amon Ra, while Drake Maye put up a whopping 9 points. Will Jack secure a win this season? Or is this the end?' }
 		]
 	},
 
 	3: {
 		rankings: [
-			{
-				rank: 1,
-				previousRank: 1,
-				team: 'connorbrannick',
-				commentary: 'Absolutely stellar performance from Connor in week 3. He set a league record 207 points and became the first team to put up 200+ points in league history. Future MVP canidate, Jahmyr Gibbs, put up a whopping 41.9 points in this matchup. If he keeps this up, I dont see any way Connor slows down this season. '
-			},
-			{
-				rank: 2,
-				previousRank: 3,
-				team: 'The Toledo Whiteskins',
-				commentary: 'BROCK BOWERS IS BACK. Huge win for the Whiteskins in week 3, this team is shaking and baking right now. Expect them to keep up the momentum and pickup an easy win vs 0-3 Kupp my Balls in week 4.'
-			},
-			{
-				rank: 3,
-				previousRank: 9,
-				team: 'Slim Pickens',
-				commentary: 'Maybe I was wrong? After starting QB, Jayden Daniels, went out with an injury, his backup QB, Tyler Shough, put up a massive performance and helped Slim Pickens take down their division rival in a dominant win. Slim pickens is on a 2 game win streak, and things are looking great heading into a favorable week 4 matchup vs The Dykes of Hazard.'
-			},
-			{
-				rank: 4,
-				previousRank: 5,
-				team: "Ja’Marr Chase Little Kids",
-				commentary: 'Back-to-Back 130+ performances for Ballow as he gets a much needed win vs Curious George. Its starting to look like his poor week 1 was a fluke. We will see if he can keep things rolling against the #1 Woman Respector in week 4'
-			},
-			{
-				rank: 5,
-				previousRank: 8,
-				team: 'The Fighting Lil Jonahs',
-				commentary: 'Much needed division win for the Lil Jonahs in week 3. Sitting at the top of their division, it appears the Jonahs are back on the right track. They will be put to the test in Week 4s game of the week vs the Tax Evaders.  '
-			},
-			{
-				rank: 6,
-				previousRank: 2,
-				team: 'Tax Evasion',
-				commentary: 'What a rollercoaster of a week for the Tax Evaders. After acquiring star RB, Saquon Barkley, in a blockbuster trade, the Evaders lost their keeper RB Devon Achane to a torn ACL. Thankfully these guys have decent depth, but it will be interesting to see how they perform without their star RB.'
-			},
-			{
-				rank: 7,
-				previousRank: 11,
-				team: 'The Dykes of Hazard',
-				commentary: 'Huge win for the Dykes in week 3, and they must be happy about the way things are looking. After a slow start, this team is looking like a true contender. The Walker & Olave duo has been lethal, so if they can keep things rolling, I would expect the Dykes to climb the rankings fast.'
-			},
-			{
-				rank: 8,
-				previousRank: 6,
-				team: 'Baumy1220',
-				commentary: 'Yikes! Not only is that two straight losses, but 2 straight DIVISION losses for Baum. The consistency from Derrick Henry is promising, but I think these guys should be slightly concerned with the direction things are heading. '
-			},
-			{
-				rank: 9,
-				previousRank: 10,
-				team: 'Curious George',
-				commentary: 'Curious George wasnt happy with last weeks ranking, and I was hoping to give him a boost, but he failed to get that statement win in week 3. Ryne was able to move up 1 spot in the rankings, but things are not looking great. Its still early in the season, but Im sure these guys are worried about another potential toilet bowl season.'
-			},
-			{
-				rank: 10,
-				previousRank: 7,
-				team: '#1 Woman Respector',
-				commentary: 'The #1 Woman Respector picked up some much-needed depth in a blockbuster trade which shipped Saquon to the Tax Evaders, but it didnt result to immediate success. The #1 Woman Respector failed to put up 100 points in a crucial division matchup, leaving him with a 1-2 record at the bottom of his division. He will hope to bounce back in a tough week 4 matchup vs Ballow.'
-			},
-			{
-				rank: 11,
-				previousRank: 4,
-				team: 'Thoy113',
-				commentary: 'Oh no. Oh nooooo. I fear that I may have cursed Tom with the generous week 2 ranking. He failed to put up 100 in a division matchup, and has now lost in back-to-back games. He will need to turn things around fast, because things are NOT looking good here.'
-			},
-			{
-				rank: 12,
-				previousRank: 12,
-				team: 'Kupp My Balls',
-				commentary: 'Honestly not a bad performance from Jack in week 3, but there isnt much you can do when your opponent breaks 200 points. Jacks losing streak now extends to 3, and he is the only team without a win. JSN has been showing out, and this team has a lot of young potential, so it will be interesting to see what moves he makes to turn things around moving forward.'
-			}
+			{ rank: 1, previousRank: 1, team: 'connorbrannick', commentary: 'Absolutely stellar performance from Connor in week 3. He set a league record 207 points and became the first team to put up 200+ points in league history. Future MVP canidate, Jahmyr Gibbs, put up a whopping 41.9 points in this matchup. If he keeps this up, I dont see any way Connor slows down this season. ' },
+			{ rank: 2, previousRank: 3, team: 'The Toledo Whiteskins', commentary: 'BROCK BOWERS IS BACK. Huge win for the Whiteskins in week 3, this team is shaking and baking right now. Expect them to keep up the momentum and pickup an easy win vs 0-3 Kupp my Balls in week 4.' },
+			{ rank: 3, previousRank: 9, team: 'Slim Pickens', commentary: 'Maybe I was wrong? After starting QB, Jayden Daniels, went out with an injury, his backup QB, Tyler Shough, put up a massive performance and helped Slim Pickens take down their division rival in a dominant win. Slim pickens is on a 2 game win streak, and things are looking great heading into a favorable week 4 matchup vs The Dykes of Hazard.' },
+			{ rank: 4, previousRank: 5, team: "Ja’Marr Chase Little Kids", commentary: 'Back-to-Back 130+ performances for Ballow as he gets a much needed win vs Curious George. Its starting to look like his poor week 1 was a fluke. We will see if he can keep things rolling against the #1 Woman Respector in week 4' },
+			{ rank: 5, previousRank: 8, team: 'The Fighting Lil Jonahs', commentary: 'Much needed division win for the Lil Jonahs in week 3. Sitting at the top of their division, it appears the Jonahs are back on the right track. They will be put to the test in Week 4s game of the week vs the Tax Evaders.  ' },
+			{ rank: 6, previousRank: 2, team: 'Tax Evasion', commentary: 'What a rollercoaster of a week for the Tax Evaders. After acquiring star RB, Saquon Barkley, in a blockbuster trade, the Evaders lost their keeper RB Devon Achane to a torn ACL. Thankfully these guys have decent depth, but it will be interesting to see how they perform without their star RB.' },
+			{ rank: 7, previousRank: 11, team: 'The Dykes of Hazard', commentary: 'Huge win for the Dykes in week 3, and they must be happy about the way things are looking. After a slow start, this team is looking like a true contender. The Walker & Olave duo has been lethal, so if they can keep things rolling, I would expect the Dykes to climb the rankings fast.' },
+			{ rank: 8, previousRank: 6, team: 'Baumy1220', commentary: 'Yikes! Not only is that two straight losses, but 2 straight DIVISION losses for Baum. The consistency from Derrick Henry is promising, but I think these guys should be slightly concerned with the direction things are heading. ' },
+			{ rank: 9, previousRank: 10, team: 'Curious George', commentary: 'Curious George wasnt happy with last weeks ranking, and I was hoping to give him a boost, but he failed to get that statement win in week 3. Ryne was able to move up 1 spot in the rankings, but things are not looking great. Its still early in the season, but Im sure these guys are worried about another potential toilet bowl season.' },
+			{ rank: 10, previousRank: 7, team: '#1 Woman Respector', commentary: 'The #1 Woman Respector picked up some much-needed depth in a blockbuster trade which shipped Saquon to the Tax Evaders, but it didnt result to immediate success. The #1 Woman Respector failed to put up 100 points in a crucial division matchup, leaving him with a 1-2 record at the bottom of his division. He will hope to bounce back in a tough week 4 matchup vs Ballow.' },
+			{ rank: 11, previousRank: 4, team: 'Thoy113', commentary: 'Oh no. Oh nooooo. I fear that I may have cursed Tom with the generous week 2 ranking. He failed to put up 100 in a division matchup, and has now lost in back-to-back games. He will need to turn things around fast, because things are NOT looking good here.' },
+			{ rank: 12, previousRank: 12, team: 'Kupp My Balls', commentary: 'Honestly not a bad performance from Jack in week 3, but there isnt much you can do when your opponent breaks 200 points. Jacks losing streak now extends to 3, and he is the only team without a win. JSN has been showing out, and this team has a lot of young potential, so it will be interesting to see what moves he makes to turn things around moving forward.' }
 		]
 	},
 
 	4: {
 		rankings: [
+			{ rank: 1, previousRank: 1, team: 'connorbrannick', commentary: 'Well, the streak finally ends. Connor put up another massive 172 points, which would have been enough to beat every team in the league except for Tom this week. After putting up 180+ in week 1 and a league record 207 in week 3, this team is still averaging nearly 174 points over the last three weeks. Jahmyr Gibbs has been one of the best players in the league all season, but even he was overshadowed this week by huge performances from Kyren Williams and Javonte Williams. One loss does not change much here, but Tom finally proved that Connor can bleed.' },
+			{ rank: 2, previousRank: 2, team: 'The Toledo Whiteskins', commentary: 'The Whiteskins are quietly putting together one hell of a season. After losing a close one to Connor in week 2, Danny has rattled off three straight wins and now sits at 3-1. They only put up 128 this week, but when you have allowed the fewest points in the league by a pretty wide margin, you do not need to score 150 every week. Lamar Jackson has finished as one of the top three scorers on this team in all four weeks, itll be interesting to see who leads the Whiteskins if Lamer misses time with his ankle injury.' },
+			{ rank: 3, previousRank: 6, team: 'Tax Evasion', commentary: 'The Tax Evaders keep finding ways to win. After dropping a tough one in week 3, they bounced back with a 121 point performance to take down the reigning champs and improve to 3-1. The offense was not exactly explosive, especially with Saquon putting up a brutal 1.5 points, but Malik Nabers, Deebo Samuel and KaVontae Turpin picked up the slack. They are only 9th in total points, but somehow they have one of the best records in the league. At this point, I am starting to think these guys just refuse to lose.' },
+			{ rank: 4, previousRank: 4, team: "Ja’Marr Chase Little Kids", commentary: 'Ballow has officially made me forget about week 1. After putting up only 81.7 points in the season opener, this team has now won three straight and is sitting at 3-1. Another balanced performance this week was led by Tee Higgins and Jonathan Taylor, while JaMarr Chase himself somehow managed only 4.7 points and they still got the win. That is a very good sign for this team, because if Chase eventually starts producing like we know he can, things could get scary.' },
+			{ rank: 5, previousRank: 8, team: 'Baumy1220', commentary: 'Now THAT is the Baum we were expecting to see. After back-to-back losses, Baum bounced back in a huge way with 163.5 points, the third-highest score in the league this week. Chuba Hubbard led the way with nearly 29 points, while Sam LaPorta, Carnell Tate and Ollie Gordon all chipped in 18+. The crazy part is that Baum is now 2-2 despite scoring the second-most points in the entire league. If this team can stop running into bad matchups, I would not want to see them in the playoffs.' },
+			{ rank: 6, previousRank: 11, team: 'Thoy113', commentary: 'STATEMENT WIN. After looking completely dead in the water following back-to-back losses and a 98 point performance in week 3, Tom absolutely exploded for 182 points and handed Connor his first loss of the season. Tetairoa McMillan went nuclear with 41.2, while Kyle Monangai added another 30.5 and Puka chipped in 25.7. This was the highest score of the week and the second-highest single-week score in the league all season. I have no idea where this came from, but suddenly Tom is 2-2 and things are looking a hell of a lot better.' },
+			{ rank: 7, previousRank: 7, team: 'The Dykes of Hazard', commentary: 'The Dykes are starting to look like a team nobody wants to play. After a huge 147 point performance in week 3, they followed it up with another solid 134 points and took down Slim Pickens to move to 2-2. Kenneth Walker has been absolutely ridiculous, finishing as one of the top three scorers on this team in all four weeks and dropping 32.4 this week. Chris Olave has also been a model of consistency, giving the Dykes one of the most reliable duos in the league. This team is slowly but surely climbing back into contention.' },
+			{ rank: 8, previousRank: 5, team: 'The Fighting Lil Jonahs', commentary: 'Not exactly the bounce-back week the reigning champs were looking for. The Lil Jonahs lost a close one to the Tax Evaders despite Bijan Robinson putting up another monster 29.2 point performance and Emanuel Wilson adding 27.0. That is now two losses in the last three weeks, and the scoring has been all over the place this season. This team clearly has the talent to compete, but they need to find some consistency before I start believing they are actually back.' },
+			{ rank: 9, previousRank: 3, team: 'Slim Pickens', commentary: 'Well, maybe Slim Pickens is not quite ready to take over the league after all. Following a massive 153.5 point performance in week 3, Slim came back down to earth with 128 points and a six-point loss to the Dykes. CeeDee Lamb continued to be an absolute monster with another 37.8 points, but the rest of the lineup could not do enough to get them over the hump. The good news is that this team is still 2-2 and CeeDee looks like one of the most dangerous players in the league. The bad news is that we may have gotten a little carried away after one big week.' },
+			{ rank: 10, previousRank: 9, team: 'Curious George', commentary: 'This is a tough one for Ryne. Curious George put up 157 points this week, the fourth-highest score in the league, and STILL walked away with a loss. Joe Burrow and Nico Collins both had huge performances, but Baum simply had too much firepower and dropped 163.5 on them. At 1-3, the record looks ugly, but this team has now shown multiple times that they can put up points. The problem is that eventually you have to start turning those performances into wins.' },
+			{ rank: 11, previousRank: 10, team: '#1 Woman Respector', commentary: 'Another frustrating week for the #1 Woman Respector. They put up 112.9 against Ballow and have now lost three straight after starting the season 1-1. Josh Allen has been an absolute machine, finishing as one of the top three scorers on this team in all four weeks, but he cannot carry this roster by himself. With the team sitting at 1-3 and averaging just over 114 points per game, something needs to change fast. The name may say #1, but the standings are starting to disagree.' },
+			{ rank: 12, previousRank: 12, team: 'Kupp My Balls', commentary: 'I genuinely do not know what else to say at this point. Jack put up another sub-100 point performance and is now 0-4, with the lowest point total in the entire league by more than 40 points. Drake Maye finally showed some life with 29.2 points, but Jaxon Smith-Njigba, who has basically been the entire offense for three straight weeks, managed only 11.6 this time around. The season is still young, but at this point Jack needs to start making some moves because this team is in serious trouble.' }
+		]
+	},
+
+	5: {
+		rankings: [
+			{ rank: 1, previousRank: 1, team: 'connorbrannick', commentary: 'After taking his first loss of the season last week, Connor responded with a massive 189 points to take down the Tax Evaders and remind everyone why he is still the clear number one. Jahmyr Gibbs put up another ridiculous 39.7 points, marking his fourth week finishing among Connor’s top three scorers. Connor now has 882.9 points through five weeks, nearly 176 points per game, and the highest-scoring team in the league by a mile. The loss last week looks more like a minor speed bump than the beginning of a downfall.' },
+			{ rank: 2, previousRank: 6, team: 'Thoy113', commentary: 'TOM IS ON A FUCKING TEAR. After handing Connor his first loss last week, Tom somehow topped himself with 193.5 points, the highest score of the week and the second-highest single-week score of the season. Puka Nacua and Bucky Irving both went over 33 points, while Jared Goff added nearly 29 of his own. This is back-to-back weeks over 180 points after looking completely dead in the water earlier in the season. Tom has gone from 0-2 to 3-2, and I am officially done doubting this team. What the hell has gotten into him?' },
+			{ rank: 3, previousRank: 4, team: "Ja’Marr Chase Little Kids", commentary: 'Ballow just keeps winning. After an 81-point disaster in Week 1, he has now rattled off four straight victories and sits at 4-1, tied for the best record in the league. This was not exactly a dominant performance at 124.3 points, but it was more than enough to take down the Fighting Lil Jonahs, who managed the lowest score of the week. Trevor Lawrence and Jason Myers led the way with 23 points apiece, while Ja’Marr Chase chipped in 17.7. The crazy part is that Ballow is winning without needing massive performances from his biggest name. If this team starts putting up 150 consistently, look out.' },
+			{ rank: 4, previousRank: 5, team: 'Baumy1220', commentary: 'Baum is quietly putting together a pretty solid season. After bouncing back with 163.5 last week, he followed it up with another win, grinding out a six-point victory over the Dykes of Hazard. Derrick Henry led the way with 22 points, and the rest of the lineup did just enough to get the job done. At 3-2 with 683.4 points, Baum has the third-highest scoring total in the league, which makes the two losses a little less concerning. This team has shown it can put up huge numbers, and even when the offense is not firing on all cylinders, it is finding ways to win.' },
+			{ rank: 5, previousRank: 9, team: 'Slim Pickens', commentary: 'Slim Pickens survives by the skin of his teeth. After a disappointing loss to the Dykes last week, Slim bounced back with a 130.4-point performance to beat Kupp My Balls by just 1.4 points. Jayden Daniels led the way with 33.3, while Trey McBride and Chimere Dike provided some solid support. Slim is now 3-2 and has won three of his last four games, but this matchup was way closer than it needed to be. Credit where it is due, though: a win is a win, and Slim is starting to look like a legitimate playoff contender.' },
+			{ rank: 6, previousRank: 3, team: 'Tax Evasion', commentary: 'Well, the Tax Evaders ran into a buzzsaw this week. Putting up 131 points is usually enough to stay competitive, but unfortunately for them, Connor decided to drop 189. Malik Nabers led the team with 26.6, and Davante Adams added another 20.6, but the rest of the lineup could not keep pace. At 3-2, the Evaders are still in a good position, but they have now dropped two of their last three games and sit well behind the league’s top scorers in total points. The record looks good, but I would like to see this offense start putting together a truly dominant performance before buying all the way in.' },
+			{ rank: 7, previousRank: 2, team: 'The Toledo Whiteskins', commentary: 'Oof. The Whiteskins have officially hit a rough patch, dropping their second game in three weeks after falling to the #1 Woman Respector. Danny managed just 108.8 points, his lowest score of the season, despite Christian Watson and Matthew Stafford combining for over 57. The supporting cast simply did not show up, and the result was a frustrating loss to a team that desperately needed a win. They are still 3-2 and have allowed the fewest points against in the league, so I am not ready to panic just yet. But after three straight wins, this is a reminder that the margin for error is getting smaller.' },
+			{ rank: 8, previousRank: 10, team: 'Curious George', commentary: 'Ryne cannot catch a break. Curious George put up 152 points this week, his second-highest score of the season, and still got absolutely smoked by Tom’s 193.5-point explosion. Jaylen Warren had a monster 35.3-point performance, while Joe Burrow added another 25.6, so it is not like this team failed to show up. At 1-4, the record looks brutal, but Curious has scored the fourth-most points in the league and has also allowed the most. This is starting to feel less like a bad roster and more like a team cursed by the schedule. At some point, though, Ryne needs a win before the season gets away from him.' },
+			{ rank: 9, previousRank: 7, team: 'The Dykes of Hazard', commentary: 'Another week, another painfully close loss for the Dykes. After putting together a strong 134-point performance last week, they managed 122 this time around and fell to Baum by just six points. Jacoby Brissett surprisingly led the way with 27.3, while Tyler Warren and Drake London chipped in nearly 20 and 19, respectively. At 2-3, the Dykes are starting to fall behind the playoff pack, but their scoring has been fairly consistent outside of one down week. They are not far off, but these close losses are starting to add up. Eventually, they need to find a way to finish these games.' },
+			{ rank: 10, previousRank: 8, team: 'The Fighting Lil Jonahs', commentary: 'This is getting ugly for the reigning champs. The Lil Jonahs put up just 104.6 points this week, the lowest score in the entire league, and lost their second straight game. Parker Washington was the lone bright spot with 29 points, while Bijan Robinson managed just 15.8 and the rest of the lineup failed to provide much help. The inconsistency has been a problem all season, with scores ranging from 96 to 158 and now back down to 104. At 2-3, they are still within striking distance, but this roster needs to figure things out quickly. The talent is there, but right now the results are not.' },
+			{ rank: 11, previousRank: 11, team: '#1 Woman Respector', commentary: 'FINALLY, A WIN! After three straight losses, the #1 Woman Respector got back on track with a 127.7-point performance to take down the Whiteskins. Josh Allen was back to being Josh Allen with 34.5 points, while George Pickens added a strong 26 to help get the job done. It was not a perfect performance, but after weeks of frustration, this is exactly the kind of result this team needed. At 2-3, there is still plenty of work to do, but maybe this is the start of a turnaround. The name might say #1, and for the first time in a while, the team is at least giving us something to believe in.' },
+			{ rank: 12, previousRank: 12, team: 'Kupp My Balls', commentary: 'JACK. HOW DO YOU KEEP DOING THIS? Kupp My Balls finally put together a respectable performance with 129 points, but somehow still lost by 1.4 points to Slim Pickens. Drake Maye exploded for 39.5, and Jaxon Smith-Njigba added another 21.8, so this was absolutely a winnable matchup. Instead, Jack is now 0-5, and the season is starting to slip away fast. The silver lining is that this was his second-highest score of the season, so there are signs of life. But at some point, moral victories need to turn into actual victories, because this losing streak is getting ridiculous.' }
+		]
+	},
+
+	6: {
+		rankings: [
+			{ rank: 1, previousRank: 1, team: 'connorbrannick', commentary: 'Connor stays on top, and at this point the rest of the league is chasing him. Even with a more modest Week 6 score of 132.46, the season-long production has been ridiculous at roughly 169 points per game. One week does not erase the gap he has built, and until somebody consistently matches his scoring ceiling, the number one spot is his to lose.' },
+			{ rank: 2, previousRank: 2, team: 'Thoy113', commentary: 'Tom has officially gone from early-season disaster to one of the most dangerous teams in the league. The Week 6 score of 133.58 was not another 190-point explosion, but it was enough to keep the momentum going. The turnaround has been real, and after the way this team looked early on, nobody should be eager to face him right now. Tom also recently acquired RB Jaylen Warren from Ryne in exchange for two future draft picks. The real question here is whether he can keep this level of production up for another month.' },
+			{ rank: 3, previousRank: 9, team: 'The Dykes of Hazard', commentary: 'The Dykes make a major jump this week, climbing from ninth to third. A 137.48-point performance gives this team another solid scoring week and puts some distance between its current form and the frustrating close losses that defined the earlier stretch. This is the kind of consistency that can turn a fringe playoff team into a real threat. The ranking is aggressive, but the recent direction is encouraging.' },
+			{ rank: 4, previousRank: 7, team: 'The Toledo Whiteskins', commentary: 'The Whiteskins climb back into the top four after a steady 132.48-point week. This roster has shown it can compete with just about anyone, and the scoring remains respectable even when it is not putting up a monster total. The biggest question is whether the lineup can find another gear against the league’s heavy hitters. For now, this is a solid bounce-back in the rankings and a reminder that Danny should not be written off.' },
+			{ rank: 5, previousRank: 4, team: 'Baumy1220', commentary: 'Baum takes a small step back after managing just 103.80 points in Week 6. The season-long numbers still show a team capable of competing, but this was the sort of performance that makes it hard to justify a spot near the very top. There is enough talent here to rebound quickly, and one ugly week should not erase the stronger performances from earlier in the season. Still, Baum needs a response next week to stop this slide from becoming a trend.' },
+			{ rank: 6, previousRank: 3, team: 'Ja’Marr Chase Little Kids', commentary: 'Ballow drops three spots after a 114.54-point week that fell short of the standard set earlier in the season. This team had built a strong position with consistent wins, but the margin for error gets smaller when the weekly scoring dips. The upside is still there, and the roster has already shown it can win without needing every star to explode at once. A bounce-back next week would quickly quiet the concerns.' },
+			{ rank: 7, previousRank: 5, team: 'Slim Pickens', commentary: 'Slim slides a couple of spots after putting up 113.30 points. The recent stretch has been encouraging overall, but this was not the kind of score that pushes a team up the rankings in a competitive league. The good news is that the season-long production remains respectable, and this roster has already demonstrated the ability to put together big weeks. Slim is still in the playoff conversation, but another quiet outing could make the middle of these rankings even more crowded.' },
+			{ rank: 8, previousRank: 6, team: 'Tax Evasion', commentary: 'The Tax Evaders fall to eighth after another week that did not quite deliver the statement performance this roster needs. A 119.12-point total is not catastrophic, but it leaves little room for error against the stronger teams in the league. After losing Jalen Hurts and Davante Adams, the Tax Evaders traded away a 3rd round pick to add WR Luther Burden to the squad. There is enough talent here to make a run, yet the recent scoring has not matched the expectations. The season is far from over, but it is time for the Evaders to start turning potential into production.' },
+			{ rank: 9, previousRank: 8, team: 'Curious George', commentary: 'Curious George moves down one spot despite scoring a respectable 124.32 points. After the tough loss, it appears Ryne is waiving the white flag by trading away Jaylen Warren and Luther Burden for future draft capital. The season has been a frustrating combination of capable scoring and disappointing results, and that makes it difficult to know exactly what to make of this roster. There is enough here to beat good teams on the right week, but the record leaves very little breathing room. Ryne needs a win soon to keep the season from slipping away, because strong point totals only mean so much without results.' },
+			{ rank: 10, previousRank: 10, team: 'The Fighting Lil Jonahs', commentary: 'The reigning champs remain stuck near the bottom after scoring just 105.74 points in Week 6. The issue has been consistency: this team has shown flashes of being competitive, but too many lineups have come up short when it matters. There is still time to turn things around, but the championship reputation is not going to win any matchups by itself. The Lil Jonahs need a convincing performance soon to prove this season is not getting away from them.' },
+			{ rank: 11, previousRank: 12, team: '(Maye) B Win 1?', commentary: 'The newly renamed (Maye) B Win 1? moves up a spot, taking over eleventh after the former Kupp My Balls identity. A new name is a fresh start, but the team still needs results on the field to make a meaningful climb. The bottom of the rankings is not out of reach, and one strong week can change the outlook quickly. For now, this is a small step in the right direction, with plenty left to prove.' },
+			{ rank: 12, previousRank: 11, team: '#1 Woman Respector', commentary: 'The Woman Respector falls to last after a rough Week 6 score of 95.40. It is hard to climb the rankings when the weekly production lands below 100, especially with several teams in the middle of the pack putting up much stronger totals. The season is not necessarily lost, but this roster needs a turnaround quickly. A big week could make the standings feel very different; another performance like this would make the climb much harder.' }
+		]
+	},
+
+	7: {
+		rankings: [
 			{
 				rank: 1,
 				previousRank: 1,
 				team: 'connorbrannick',
-				commentary: 'Well, the streak finally ends. Connor put up another massive 172 points, which would have been enough to beat every team in the league except for Tom this week. After putting up 180+ in week 1 and a league record 207 in week 3, this team is still averaging nearly 174 points over the last three weeks. Jahmyr Gibbs has been one of the best players in the league all season, but even he was overshadowed this week by huge performances from Kyren Williams and Javonte Williams. One loss does not change much here, but Tom finally proved that Connor can bleed.'
+				commentary: 'CONNOR IS BACK ON TOP OF THE WEEKLY SCOREBOARD. After a relatively quiet 132.46 last week, Connor responded with 141.82 points, the highest total in the league this week. Zay Flowers led the way with 25.7, Javonte Williams added 25, and Kyren Williams chipped in 19.6. Four starters finished with at least 18 points, which is exactly how you build a weekly floor without needing one guy to score 40. Brock Purdy also delivered 15.02, his second straight week above 15 as a starter. The scary thing about Connor is that even when the rest of the league starts feeling good about itself, he keeps finding ways to put up the biggest number. Everyone else is fighting for position while the commissioner’s nightmare continues: Connor is making first place look awfully comfortable.'
 			},
 			{
 				rank: 2,
 				previousRank: 2,
-				team: 'The Toledo Whiteskins',
-				commentary: 'The Whiteskins are quietly putting together one hell of a season. After losing a close one to Connor in week 2, Danny has rattled off three straight wins and now sits at 3-1. They only put up 128 this week, but when you have allowed the fewest points in the league by a pretty wide margin, you do not need to score 150 every week. Lamar Jackson has finished as one of the top three scorers on this team in all four weeks, itll be interesting to see who leads the Whiteskins if Lamer misses time with his ankle injury.'
+				team: 'Thoy113',
+				commentary: 'TOM HAD A WEEK THAT SHOULD COME WITH A WARNING LABEL. He accidentally started an injured Emeka Egbuka, who scored zero, and then watched Rashid Shaheed leave with a knee injury. The severity of Shaheed’s injury remains uncertain, so this could be a significant problem if he misses time. The frustrating part is that Tom still had a few legitimate contributors: Bucky Irving scored 27.5, Jaylen Warren added 19.2 in his first week after the trade, and Puka Nacua chipped in 18.8. Jared Goff also delivered 18.02. That is four starters with at least 18 points, yet the team finished at 113.32. The Warren trade is already looking useful, but the Egbuka mistake is the kind of avoidable error that can haunt a manager in a close matchup. Tom’s comeback season is still alive, but between the lineup blunder and Shaheed’s knee, this week felt like a warning shot.'
 			},
 			{
 				rank: 3,
-				previousRank: 6,
-				team: 'Tax Evasion',
-				commentary: 'The Tax Evaders keep finding ways to win. After dropping a tough one in week 3, they bounced back with a 121 point performance to take down the reigning champs and improve to 3-1. The offense was not exactly explosive, especially with Saquon putting up a brutal 1.5 points, but Malik Nabers, Deebo Samuel and KaVontae Turpin picked up the slack. They are only 9th in total points, but somehow they have one of the best records in the league. At this point, I am starting to think these guys just refuse to lose.'
+				previousRank: 3,
+				team: 'The Dykes of Hazard',
+				commentary: 'TONY POLLARD JUST PUT THE LEAGUE ON NOTICE. His 37-point explosion was the biggest individual performance on the Dykes’ roster this week, and D’Andre Swift added 19.0. Swift has now scored at least 15 points in three consecutive weeks as a starter, while C.J. Stroud has done it in back-to-back weeks. That is a nice combination of a hot running back and a quarterback finding some consistency. The Dykes finished with 126.22, which is solid, but Pollard’s monster performance did a lot of the heavy lifting. The storyline here is whether this team can keep getting enough production from the rest of the lineup to turn a strong top end into a genuine championship push. The Dykes are sitting third for a reason, but they will need more than one player going nuclear to challenge Connor and Tom.'
 			},
 			{
 				rank: 4,
-				previousRank: 4,
-				team: "Ja’Marr Chase Little Kids",
-				commentary: 'Ballow has officially made me forget about week 1. After putting up only 81.7 points in the season opener, this team has now won three straight and is sitting at 3-1. Another balanced performance this week was led by Tee Higgins and Jonathan Taylor, while JaMarr Chase himself somehow managed only 4.7 points and they still got the win. That is a very good sign for this team, because if Chase eventually starts producing like we know he can, things could get scary.'
+				previousRank: 7,
+				team: 'Slim Pickens',
+				commentary: 'SLIM PICKENS JUST DROPPED 138.72 AND IS DONE BEING TREATED LIKE A MIDDLE-OF-THE-PACK TEAM. Quinshon Judkins scored 25.4, Trey McBride added 23.6, CeeDee Lamb chipped in 23.4, and Rhamondre Stevenson delivered another 21.0. Four starters above 20 points is an absurdly good foundation for a weekly score. This was not a one-man carry job; it was a full lineup showing up at the same time. Slim jumps from seventh to fourth, and the rise feels deserved after a week like this. The question is whether this roster can repeat the performance or whether we are about to get another roller coaster. For now, though, the league should take notice: when Slim gets contributions from multiple positions, this team has enough firepower to beat just about anybody.'
 			},
 			{
 				rank: 5,
 				previousRank: 8,
-				team: 'Baumy1220',
-				commentary: 'Now THAT is the Baum we were expecting to see. After back-to-back losses, Baum bounced back in a huge way with 163.5 points, the third-highest score in the league this week. Chuba Hubbard led the way with nearly 29 points, while Sam LaPorta, Carnell Tate and Ollie Gordon all chipped in 18+. The crazy part is that Baum is now 2-2 despite scoring the second-most points in the entire league. If this team can stop running into bad matchups, I would not want to see them in the playoffs.'
+				team: 'Tax Evasion',
+				commentary: 'LUTHER BURDEN ARRIVED IN TAX EVASION AND IMMEDIATELY BECAME THE TOP SCORER. After acquiring Burden from Curious George for a third-round pick, Tax Evasion got 23.2 points from its new receiver in his first week with the team. That is one hell of a first impression. Ashton Jeanty scored 18.1 and has now reached 15 points in two consecutive weeks as a starter, while Malik Nabers added 16.6 and has delivered 15-plus in four straight weeks. Tax Evasion finished with 136.78, the third-highest score in the league this week. The Burden deal is already looking interesting, especially with Nabers providing a reliable scoring streak alongside him. Curious George may be collecting draft capital, but Tax Evasion is collecting points right now. The question is whether Burden can keep producing enough to make that third-round pick look like a bargain.'
 			},
 			{
 				rank: 6,
-				previousRank: 11,
-				team: 'Thoy113',
-				commentary: 'STATEMENT WIN. After looking completely dead in the water following back-to-back losses and a 98 point performance in week 3, Tom absolutely exploded for 182 points and handed Connor his first loss of the season. Tetairoa McMillan went nuclear with 41.2, while Kyle Monangai added another 30.5 and Puka chipped in 25.7. This was the highest score of the week and the second-highest single-week score in the league all season. I have no idea where this came from, but suddenly Tom is 2-2 and things are looking a hell of a lot better.'
+				previousRank: 6,
+				team: 'Ja’Marr Chase Little Kids',
+				commentary: 'BALLOW HAS A PRETTY GOOD PROBLEM: TOO MANY WAYS TO HURT YOU. Ja’Marr Chase Little Kids scored 136.5, with Tee Higgins leading the way at 26.3. Josh Jacobs added 20.1, Jonathan Taylor scored 19.5, and Ja’Marr Chase himself chipped in 16.2. Taylor has now reached 15 points in consecutive weeks as a starter, which is encouraging for a team that needs reliable production across the lineup. The fun part is that Chase did not need to be the leading scorer for this team to put up 136.5. Higgins and Jacobs did plenty of the damage, and Taylor provided another strong contribution. Ballow holds sixth, but the weekly score suggests this roster has more upside than the ranking alone might indicate. If this group starts stacking wins alongside these performances, the teams above him could quickly find themselves looking over their shoulders.'
 			},
 			{
 				rank: 7,
-				previousRank: 7,
-				team: 'The Dykes of Hazard',
-				commentary: 'The Dykes are starting to look like a team nobody wants to play. After a huge 147 point performance in week 3, they followed it up with another solid 134 points and took down Slim Pickens to move to 2-2. Kenneth Walker has been absolutely ridiculous, finishing as one of the top three scorers on this team in all four weeks and dropping 32.4 this week. Chris Olave has also been a model of consistency, giving the Dykes one of the most reliable duos in the league. This team is slowly but surely climbing back into contention.'
+				previousRank: 5,
+				team: 'Baumy1220',
+				commentary: 'BAUM’S LINEUP HAS ENTERED THE MYSTERY NOVEL PHASE. Caleb Williams scored 22.62 and Ollie Gordon II added 19.8, but the rest of the starting lineup failed to keep pace. Derrick Henry managed just 6.4, Sam LaPorta scored 2.8, and the 49ers defense finished at -1. The result was 93.52 points, one of the lowest totals in the league this week. Caleb has now delivered 15-plus points in two consecutive weeks as a starter, so at least there is some quarterback momentum. But a couple of good individual performances cannot rescue a lineup when several other positions contribute almost nothing. Baum drops to seventh, and this is the sort of week that makes it difficult to trust the roster from one Sunday to the next. The talent is there; the challenge is getting enough of it to show up together.'
 			},
 			{
 				rank: 8,
-				previousRank: 5,
-				team: 'The Fighting Lil Jonahs',
-				commentary: 'Not exactly the bounce-back week the reigning champs were looking for. The Lil Jonahs lost a close one to the Tax Evaders despite Bijan Robinson putting up another monster 29.2 point performance and Emanuel Wilson adding 27.0. That is now two losses in the last three weeks, and the scoring has been all over the place this season. This team clearly has the talent to compete, but they need to find some consistency before I start believing they are actually back.'
+				previousRank: 4,
+				team: 'The Toledo Whiteskins',
+				commentary: 'THE WHITESKINS ARE LEARNING THAT ONE RELIABLE STAR CANNOT CARRY TEN STARTING SPOTS. Christian McCaffrey scored 21.0 and has now delivered at least 15 points in six consecutive weeks as a starter. That is an incredible run of consistency, and he is doing exactly what Danny needs from his most important pieces. Unfortunately, the rest of the lineup did not follow his lead. KC Concepcion scored 22.7, but Lamar Jackson finished with zero and the team ended at just 93.7 points. That is a painful result for a roster that was ranked fourth last week. The problem is not McCaffrey—he has been one of the most dependable players in the league. The problem is that the supporting cast has to do more than occasionally chip in. Danny falls to eighth, and this team needs a more complete performance before we can confidently put it back near the top.'
 			},
 			{
 				rank: 9,
-				previousRank: 3,
-				team: 'Slim Pickens',
-				commentary: 'Well, maybe Slim Pickens is not quite ready to take over the league after all. Following a massive 153.5 point performance in week 3, Slim came back down to earth with 128 points and a six-point loss to the Dykes. CeeDee Lamb continued to be an absolute monster with another 37.8 points, but the rest of the lineup could not do enough to get them over the hump. The good news is that this team is still 2-2 and CeeDee looks like one of the most dangerous players in the league. The bad news is that we may have gotten a little carried away after one big week.'
+				previousRank: 10,
+				team: 'The Fighting Lil Jonahs',
+				commentary: 'THE REIGNING CHAMPS HAVE FINALLY SHOWN A LITTLE LIFE. The Fighting Lil Jonahs scored 124.68, led by Bo Nix’s 27.28, Emanuel Wilson’s 19.0, and Bijan Robinson’s 18.2. Three different starters clearing 18 points is a welcome change for a team that has struggled to find consistency. Bo Nix was the standout, using his legs and arm to deliver a big fantasy performance. The Jonahs move up one spot to ninth, but let’s not get carried away just yet. One solid week does not erase the earlier scoring problems, and the defending champs still have work to do if they want to be considered a real threat. The good news is that the roster finally looks capable of putting together a respectable total. Now they need to prove this was the beginning of a turnaround rather than a one-week cameo.'
 			},
 			{
 				rank: 10,
 				previousRank: 9,
 				team: 'Curious George',
-				commentary: 'This is a tough one for Ryne. Curious George put up 157 points this week, the fourth-highest score in the league, and STILL walked away with a loss. Joe Burrow and Nico Collins both had huge performances, but Baum simply had too much firepower and dropped 163.5 on them. At 1-3, the record looks ugly, but this team has now shown multiple times that they can put up points. The problem is that eventually you have to start turning those performances into wins.'
+				commentary: 'RYNE HAS OFFICIALLY ENTERED HIS DRAFT CAPITAL ERA. Curious George sent Luther Burden to Tax Evasion for a third-round pick, then shipped Jaylen Warren to Thoy113 for a second- and thirteenth-round pick. Two roster pieces gone, future picks coming back, and the league is left wondering whether this is a calculated rebuild or a frustrated manager trying to change the direction of the season. The immediate result was rough: Curious scored just 93.88 despite Joe Burrow putting up 29.38 and Amon-Ra St. Brown adding 23.7. That is 53.08 points from two starters, but the rest of the lineup could not get enough done. The second-round pick is the centerpiece of the Warren deal, and Ryne will need to make it count. Meanwhile, Tax Evasion already got 23.2 from Burden and Thoy got 19.2 from Warren. It is far too early to declare winners, but both new teams got an immediate contribution while Curious took another loss in the rankings. The pressure is now on Ryne to turn those picks into a better future.'
 			},
 			{
 				rank: 11,
-				previousRank: 10,
-				team: '#1 Woman Respector',
-				commentary: 'Another frustrating week for the #1 Woman Respector. They put up 112.9 against Ballow and have now lost three straight after starting the season 1-1. Josh Allen has been an absolute machine, finishing as one of the top three scorers on this team in all four weeks, but he cannot carry this roster by himself. With the team sitting at 1-3 and averaging just over 114 points per game, something needs to change fast. The name may say #1, but the standings are starting to disagree.'
+				previousRank: 11,
+				team: '(Maye) B Win 1?',
+				commentary: 'THE NAME MAY BE A QUESTION, BUT DRAKE MAYE AND JSN ARE PROVIDING SOME ANSWERS. Drake Maye scored 28.94 and has now delivered at least 15 points in four consecutive weeks as a starter. Jaxon Smith-Njigba was even better, scoring 30.3 and extending his own 15-plus streak to three straight weeks. That is a genuinely exciting combination: a quarterback producing consistently and a receiver putting up major numbers. Colston Loveland also chipped in 17.9, helping the team reach 120.34 points. The frustrating part is that the team still sits eleventh despite two major individual performances. The positive part is that Maye and JSN are giving this roster something dependable to build around. If the supporting cast can start contributing more consistently, this team could climb out of the bottom tier. For now, (Maye) B Win 1? has at least found a couple of players who deserve to be in the weekly conversation.'
 			},
 			{
 				rank: 12,
 				previousRank: 12,
-				team: 'Kupp My Balls',
-				commentary: 'I genuinely do not know what else to say at this point. Jack put up another sub-100 point performance and is now 0-4, with the lowest point total in the entire league by more than 40 points. Drake Maye finally showed some life with 29.2 points, but Jaxon Smith-Njigba, who has basically been the entire offense for three straight weeks, managed only 11.6 this time around. The season is still young, but at this point Jack needs to start making some moves because this team is in serious trouble.'
-			},
-]
-},
-			5: {
-	rankings: [
-		{
-			rank: 1,
-			previousRank: 1,
-			team: 'connorbrannick',
-			commentary: 'After taking his first loss of the season last week, Connor responded with a massive 189 points to take down the Tax Evaders and remind everyone why he is still the clear number one. Jahmyr Gibbs put up another ridiculous 39.7 points, marking his fourth week finishing among Connor’s top three scorers. Connor now has 882.9 points through five weeks, nearly 176 points per game, and the highest-scoring team in the league by a mile. The loss last week looks more like a minor speed bump than the beginning of a downfall.'
-		},
-		{
-			rank: 2,
-			previousRank: 6,
-			team: 'Thoy113',
-			commentary: 'TOM IS ON A FUCKING TEAR. After handing Connor his first loss last week, Tom somehow topped himself with 193.5 points, the highest score of the week and the second-highest single-week score of the season. Puka Nacua and Bucky Irving both went over 33 points, while Jared Goff added nearly 29 of his own. This is back-to-back weeks over 180 points after looking completely dead in the water earlier in the season. Tom has gone from 0-2 to 3-2, and I am officially done doubting this team. What the hell has gotten into him?'
-		},
-		{
-			rank: 3,
-			previousRank: 4,
-			team: "Ja’Marr Chase Little Kids",
-			commentary: 'Ballow just keeps winning. After an 81-point disaster in Week 1, he has now rattled off four straight victories and sits at 4-1, tied for the best record in the league. This was not exactly a dominant performance at 124.3 points, but it was more than enough to take down the Fighting Lil Jonahs, who managed the lowest score of the week. Trevor Lawrence and Jason Myers led the way with 23 points apiece, while Ja’Marr Chase chipped in 17.7. The crazy part is that Ballow is winning without needing massive performances from his biggest name. If this team starts putting up 150 consistently, look out.'
-		},
-		{
-			rank: 4,
-			previousRank: 5,
-			team: 'Baumy1220',
-			commentary: 'Baum is quietly putting together a pretty solid season. After bouncing back with 163.5 last week, he followed it up with another win, grinding out a six-point victory over the Dykes of Hazard. Derrick Henry led the way with 22 points, and the rest of the lineup did just enough to get the job done. At 3-2 with 683.4 points, Baum has the third-highest scoring total in the league, which makes the two losses a little less concerning. This team has shown it can put up huge numbers, and even when the offense is not firing on all cylinders, it is finding ways to win.'
-		},
-		{
-			rank: 5,
-			previousRank: 9,
-			team: 'Slim Pickens',
-			commentary: 'Slim Pickens survives by the skin of his teeth. After a disappointing loss to the Dykes last week, Slim bounced back with a 130.4-point performance to beat Kupp My Balls by just 1.4 points. Jayden Daniels led the way with 33.3, while Trey McBride and Chimere Dike provided some solid support. Slim is now 3-2 and has won three of his last four games, but this matchup was way closer than it needed to be. Credit where it is due, though: a win is a win, and Slim is starting to look like a legitimate playoff contender.'
-		},
-		{
-			rank: 6,
-			previousRank: 3,
-			team: 'Tax Evasion',
-			commentary: 'Well, the Tax Evaders ran into a buzzsaw this week. Putting up 131 points is usually enough to stay competitive, but unfortunately for them, Connor decided to drop 189. Malik Nabers led the team with 26.6, and Davante Adams added another 20.6, but the rest of the lineup could not keep pace. At 3-2, the Evaders are still in a good position, but they have now dropped two of their last three games and sit well behind the league’s top scorers in total points. The record looks good, but I would like to see this offense start putting together a truly dominant performance before buying all the way in.'
-		},
-		{
-			rank: 7,
-			previousRank: 2,
-			team: 'The Toledo Whiteskins',
-			commentary: 'Oof. The Whiteskins have officially hit a rough patch, dropping their second game in three weeks after falling to the #1 Woman Respector. Danny managed just 108.8 points, his lowest score of the season, despite Christian Watson and Matthew Stafford combining for over 57. The supporting cast simply did not show up, and the result was a frustrating loss to a team that desperately needed a win. They are still 3-2 and have allowed the fewest points against in the league, so I am not ready to panic just yet. But after three straight wins, this is a reminder that the margin for error is getting smaller.'
-		},
-		{
-			rank: 8,
-			previousRank: 10,
-			team: 'Curious George',
-			commentary: 'Ryne cannot catch a break. Curious George put up 152 points this week, his second-highest score of the season, and still got absolutely smoked by Tom’s 193.5-point explosion. Jaylen Warren had a monster 35.3-point performance, while Joe Burrow added another 25.6, so it is not like this team failed to show up. At 1-4, the record looks brutal, but Curious has scored the fourth-most points in the league and has also allowed the most. This is starting to feel less like a bad roster and more like a team cursed by the schedule. At some point, though, Ryne needs a win before the season gets away from him.'
-		},
-		{
-			rank: 9,
-			previousRank: 7,
-			team: 'The Dykes of Hazard',
-			commentary: 'Another week, another painfully close loss for the Dykes. After putting together a strong 134-point performance last week, they managed 122 this time around and fell to Baum by just six points. Jacoby Brissett surprisingly led the way with 27.3, while Tyler Warren and Drake London chipped in nearly 20 and 19, respectively. At 2-3, the Dykes are starting to fall behind the playoff pack, but their scoring has been fairly consistent outside of one down week. They are not far off, but these close losses are starting to add up. Eventually, they need to find a way to finish these games.'
-		},
-		{
-			rank: 10,
-			previousRank: 8,
-			team: 'The Fighting Lil Jonahs',
-			commentary: 'This is getting ugly for the reigning champs. The Lil Jonahs put up just 104.6 points this week, the lowest score in the entire league, and lost their second straight game. Parker Washington was the lone bright spot with 29 points, while Bijan Robinson managed just 15.8 and the rest of the lineup failed to provide much help. The inconsistency has been a problem all season, with scores ranging from 96 to 158 and now back down to 104. At 2-3, they are still within striking distance, but this roster needs to figure things out quickly. The talent is there, but right now the results are not.'
-		},
-		{
-			rank: 11,
-			previousRank: 11,
-			team: '#1 Woman Respector',
-			commentary: 'FINALLY, A WIN! After three straight losses, the #1 Woman Respector got back on track with a 127.7-point performance to take down the Whiteskins. Josh Allen was back to being Josh Allen with 34.5 points, while George Pickens added a strong 26 to help get the job done. It was not a perfect performance, but after weeks of frustration, this is exactly the kind of result this team needed. At 2-3, there is still plenty of work to do, but maybe this is the start of a turnaround. The name might say #1, and for the first time in a while, the team is at least giving us something to believe in.'
-		},
-		{
-			rank: 12,
-			previousRank: 12,
-			team: 'Kupp My Balls',
-			commentary: 'JACK. HOW DO YOU KEEP DOING THIS? Kupp My Balls finally put together a respectable performance with 129 points, but somehow still lost by 1.4 points to Slim Pickens. Drake Maye exploded for 39.5, and Jaxon Smith-Njigba added another 21.8, so this was absolutely a winnable matchup. Instead, Jack is now 0-5, and the season is starting to slip away fast. The silver lining is that this was his second-highest score of the season, so there are signs of life. But at some point, moral victories need to turn into actual victories, because this losing streak is getting ridiculous.'
-		}
-	]
-},
-6: {
-	rankings: [
-		{
-			rank: 1,
-			previousRank: 1,
-			team: 'connorbrannick',
-			commentary: 'Connor stays on top, and at this point the rest of the league is chasing him. Even with a more modest Week 6 score of 132.46, the season-long production has been ridiculous at roughly 169 points per game. One week does not erase the gap he has built, and until somebody consistently matches his scoring ceiling, the number one spot is his to lose.'
-		},
-		{
-			rank: 2,
-			previousRank: 2,
-			team: 'Thoy113',
-			commentary: 'Tom has officially gone from early-season disaster to one of the most dangerous teams in the league. The Week 6 score of 133.58 was not another 190-point explosion, but it was enough to keep the momentum going. The turnaround has been real, and after the way this team looked early on, nobody should be eager to face him right now. Tom also recently acquired RB Jaylen Warren from Ryne in exchange for two future draft picks. The real question here is whether he can keep this level of production up for another month.'
-		},
-		{
-			rank: 3,
-			previousRank: 9,
-			team: 'The Dykes of Hazard',
-			commentary: 'The Dykes make a major jump this week, climbing from ninth to third. A 137.48-point performance gives this team another solid scoring week and puts some distance between its current form and the frustrating close losses that defined the earlier stretch. This is the kind of consistency that can turn a fringe playoff team into a real threat. The ranking is aggressive, but the recent direction is encouraging.'
-		},
-		{
-			rank: 4,
-			previousRank: 7,
-			team: 'The Toledo Whiteskins',
-			commentary: 'The Whiteskins climb back into the top four after a steady 132.48-point week. This roster has shown it can compete with just about anyone, and the scoring remains respectable even when it is not putting up a monster total. The biggest question is whether the lineup can find another gear against the league’s heavy hitters. For now, this is a solid bounce-back in the rankings and a reminder that Danny should not be written off.'
-		},
-		{
-			rank: 5,
-			previousRank: 4,
-			team: 'Baumy1220',
-			commentary: 'Baum takes a small step back after managing just 103.80 points in Week 6. The season-long numbers still show a team capable of competing, but this was the sort of performance that makes it hard to justify a spot near the very top. There is enough talent here to rebound quickly, and one ugly week should not erase the stronger performances from earlier in the season. Still, Baum needs a response next week to stop this slide from becoming a trend.'
-		},
-		{
-			rank: 6,
-			previousRank: 3,
-			team: 'Ja’Marr Chase Little Kids',
-			commentary: 'Ballow drops three spots after a 114.54-point week that fell short of the standard set earlier in the season. This team had built a strong position with consistent wins, but the margin for error gets smaller when the weekly scoring dips. The upside is still there, and the roster has already shown it can win without needing every star to explode at once. A bounce-back next week would quickly quiet the concerns.'
-		},
-		{
-			rank: 7,
-			previousRank: 5,
-			team: 'Slim Pickens',
-			commentary: 'Slim slides a couple of spots after putting up 113.30 points. The recent stretch has been encouraging overall, but this was not the kind of score that pushes a team up the rankings in a competitive league. The good news is that the season-long production remains respectable, and this roster has already demonstrated the ability to put together big weeks. Slim is still in the playoff conversation, but another quiet outing could make the middle of these rankings even more crowded.'
-		},
-		{
-			rank: 8,
-			previousRank: 6,
-			team: 'Tax Evasion',
-			commentary: 'The Tax Evaders fall to eighth after another week that did not quite deliver the statement performance this roster needs. A 119.12-point total is not catastrophic, but it leaves little room for error against the stronger teams in the league. After losing Jalen Hurts and Davante Adams, the Tax Evaders traded away a 3rd round pick to add WR Luther Burden to the squad. There is enough talent here to make a run, yet the recent scoring has not matched the expectations. The season is far from over, but it is time for the Evaders to start turning potential into production.'
-		},
-		{
-			rank: 9,
-			previousRank: 8,
-			team: 'Curious George',
-			commentary: 'Curious George moves down one spot despite scoring a respectable 124.32 points. After the tough loss, it appears Ryne is waiving the white flag by trading away Jaylen Warren and Luther Burden for future draft capital. The season has been a frustrating combination of capable scoring and disappointing results, and that makes it difficult to know exactly what to make of this roster. There is enough here to beat good teams on the right week, but the record leaves very little breathing room. Ryne needs a win soon to keep the season from slipping away, because strong point totals only mean so much without results.'
-		},
-		{
-			rank: 10,
-			previousRank: 10,
-			team: 'The Fighting Lil Jonahs',
-			commentary: 'The reigning champs remain stuck near the bottom after scoring just 105.74 points in Week 6. The issue has been consistency: this team has shown flashes of being competitive, but too many lineups have come up short when it matters. There is still time to turn things around, but the championship reputation is not going to win any matchups by itself. The Lil Jonahs need a convincing performance soon to prove this season is not getting away from them.'
-		},
-		{
-			rank: 11,
-			previousRank: 12,
-			team: '(Maye) B Win 1?',
-			commentary: 'The newly renamed (Maye) B Win 1? moves up a spot, taking over eleventh after the former Kupp My Balls identity. A new name is a fresh start, but the team still needs results on the field to make a meaningful climb. The bottom of the rankings is not out of reach, and one strong week can change the outlook quickly. For now, this is a small step in the right direction, with plenty left to prove.'
-		},
-		{
-			rank: 12,
-			previousRank: 11,
-			team: '#1 Woman Respector',
-			commentary: 'The Woman Respector falls to last after a rough Week 6 score of 95.40. It is hard to climb the rankings when the weekly production lands below 100, especially with several teams in the middle of the pack putting up much stronger totals. The season is not necessarily lost, but this roster needs a turnaround quickly. A big week could make the standings feel very different; another performance like this would make the climb much harder.'
-		}
-	]
-},
+				team: '#1 Woman Respector',
+				commentary: 'THE #1 WOMAN RESPECTOR IS RUNNING OUT OF TIME TO MAKE THE NAME LOOK ACCURATE. Jameson Williams scored 24.6 and was the clear bright spot, but George Pickens managed 14.7 and the rest of the lineup never found much rhythm. Baker Mayfield scored just 6.66, Breece Hall finished with zero, and the team ended at 93.46 points—the lowest total in this week’s rankings. That is the kind of performance that makes a climb out of last place extremely difficult. Jameson did his part, but one player cannot compensate for multiple starters disappearing from the box score. The Respector remains twelfth, and the next week needs to be about getting a complete lineup performance rather than waiting for one star to save the day. The name promises number one; the scoreboard needs to start making a stronger argument.'
+			}
+		]
+	},
 };
