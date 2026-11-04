@@ -205,4 +205,68 @@ export const POWER_RANKINGS = {
 			}
 		]
 	},
+	8: {
+	  rankings: [
+	    {
+	      rank: 1,
+	      team: "Connorbrannick",
+	      commentary: "Still sitting at the top, but Week 8 was more survival than domination. Connor put up 126.20, with Jahmyr Gibbs leading the way at 27.8. Dak Prescott added 20.8, but this roster is going to need more consistent production from the supporting cast if it wants to keep the throne. The good news? Nobody has found a reason to knock Connor off yet."
+	    },
+	    {
+	      rank: 2,
+	      team: "Thoy113",
+	      commentary: "141.94 points and a statement performance. Patrick Mahomes led the charge with 25.94, while Jaylen Warren, Bucky Irving, Puka Nacua, and James Cook all cleared 20. This lineup is starting to look genuinely dangerous. The running back room is producing, the receivers are producing, and Mahomes is doing Mahomes things. Thoy is making a legitimate push for the top spot."
+	    },
+	    {
+	      rank: 3,
+	      team: "Ja’Marr Chase Little Kids",
+	      commentary: "The weekly high scorer with 154.70, and it wasn't particularly close. Tee Higgins exploded for 36, Ja'Marr Chase added 28.6, and Josh Jacobs chipped in 21.7. Trevor Lawrence even got in on the fun with 19.9. When your top three players combine for over 86 points, the rest of the league should probably be concerned. This is the kind of offensive ceiling that can win a championship."
+	    },
+	    {
+	      rank: 4,
+	      team: "Slim Pickens",
+	      commentary: "A 126.48-point week powered by an absolutely ridiculous 33.4 from Chimere Dike. Trey McBride added 18.2, and Jayden Daniels contributed 15.48. Dike single-handedly provided the kind of unexpected explosion that makes fantasy football so entertaining. Slim remains firmly in the upper tier, but the question is whether this roster can keep getting production beyond its biggest names."
+	    },
+	    {
+	      rank: 5,
+	      team: "The Dykes of Hazard",
+	      commentary: "125.66 points, with the running backs doing the heavy lifting. D'Andre Swift and Tony Pollard each went off for more than 28 points, combining for 56.6. That's an excellent foundation, but the rest of the lineup was considerably quieter. This team has the potential to be a weekly headache for opponents if those two can keep carrying the ground game."
+	    },
+	    {
+	      rank: 6,
+	      team: "Baumy1220",
+	      commentary: "135.58 points and a strong bounce-back performance. Michael Wilson led the team with 25.3, Chuba Hubbard added 23.9, and the Buccaneers defense surprisingly contributed 18. Caleb Williams and Derrick Henry provided additional support. This roster has some serious upside when the supporting cast shows up. The question is whether Baumy can turn these big weeks into something consistent."
+	    },
+	    {
+	      rank: 7,
+	      team: "Tax Evasion",
+	      commentary: "126.18 points, but this one was a little unconventional. Kirk Cousins led the team with 29.18, Braelon Allen exploded for 26.3, and the Steelers defense added 21. Luther Burden chipped in 16.6, continuing to make that trade look interesting. It's not necessarily the most intimidating collection of names, but points are points. Tax Evasion will happily take production wherever it can find it."
+	    },
+	    {
+	      rank: 8,
+	      team: "The Toledo Whiteskins",
+	      commentary: "A frustrating 103.10-point outing. Brock Bowers led the way with 26.2, and the Jaguars defense surprisingly delivered 20. But the rest of the lineup never really got going. When your defense is your second-highest scorer, you probably aren't having the Sunday you envisioned. There's talent here, but Toledo needs more from its offensive stars."
+	    },
+	    {
+	      rank: 9,
+	      team: "The Fighting Lil Jonahs",
+	      commentary: "95.76 points. Not exactly the kind of performance that inspires confidence. Tucker Kraft was the team's leading scorer at 15.8, while Chase Brown, Ladd McConkey, and Bryce Young all finished in the low teens. There wasn't a complete disaster from any one player; the problem was that nobody stepped up to deliver a difference-making performance. Fantasy football's version of death by a thousand cuts."
+	    },
+	    {
+	      rank: 10,
+	      team: "Curious George",
+	      commentary: "138.68 points. Let that sink in. Joe Burrow erupted for 42.48, Harold Fannin added 21.4, and Malik Washington contributed 15.4. That's a monster week, yet Curious George remains 10th in the power rankings. The roster clearly has the ability to put up points, but one huge Sunday doesn't erase the bigger questions about consistency. Still, this team deserves some credit for reminding everyone what it can do."
+	    },
+	    {
+	      rank: 11,
+	      team: "(Maye) B Win 1?",
+	      commentary: "A rough 93.16-point week. Jaxon Smith-Njigba and Drake Maye both delivered more than 22 points, but the rest of the lineup struggled to keep pace. Saquon Barkley managed 12.4, and there wasn't enough production elsewhere to make up the difference. The top-end talent is still there, but this roster needs more than two players to show up on Sunday."
+	    },
+	    {
+	      rank: 12,
+	      team: "#1 Woman Respector",
+	      commentary: "84.50 points and another week at the bottom. Dalton Kincaid led the way with 18.1, Jameson Williams scored 16, and DJ Moore added 15.6. The problem is that the rest of the lineup offered very little. There are recognizable names here, but recognizable names don't win fantasy matchups. Something needs to change before this season gets away completely."
+	    }
+	  ]
+	},
 };
