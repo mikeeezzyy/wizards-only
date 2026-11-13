@@ -345,5 +345,5 @@ export const POWER_RANKINGS = {
 	    }
 	  ]
 	},
-]
+
 };
