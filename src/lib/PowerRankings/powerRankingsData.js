@@ -269,4 +269,81 @@ export const POWER_RANKINGS = {
 	    }
 	  ]
 	},
+	9: {
+	  rankings: [
+	    {
+	      rank: 1,
+	      previousRank: 1,
+	      team: 'connorbrannick',
+	      commentary: "Connor is still sitting on the throne, and Week 9 was another reminder why. A massive 156.98 points against The Fighting Lil Jonahs was the second-highest score of the week. Matthew Golden exploded for 30.4, Brock Purdy added 28.28, and Javonte Williams chipped in 22.4. When three players are producing like that, this lineup is extremely difficult to beat. Connor remains the team to catch."
+	    },
+	    {
+	      rank: 2,
+	      previousRank: 2,
+	      team: 'thoy113',
+	      commentary: "THOY IS STARTING TO LOOK LIKE A PROBLEM. A league-high 150.58 points against Baumy1220, powered by a ridiculous 32.5 from Puka Nacua and 28.5 from Bucky Irving. James Cook added 18.7, and Patrick Mahomes chipped in another 16.48. That's production from every corner of the lineup. Connor is still number one, but Thoy is making the gap look a lot less comfortable."
+	    },
+	    {
+	      rank: 3,
+	      previousRank: 3,
+	      team: 'Ja’Marr Chase Little Kids',
+	      commentary: "A narrow 109.78–103.74 win over Tax Evasion, but a win is a win. Ja'Marr Chase led the way with 30 points, while Tee Higgins added 18.7. The passing game continues to give this roster a dangerous ceiling, even if the overall score wasn't anything spectacular. Sitting at 7–2, this team has earned its place near the top. The challenge now is putting together a more complete performance."
+	    },
+	    {
+	      rank: 4,
+	      previousRank: 5,
+	      team: 'The Dykes of Hazard',
+	      commentary: "A strong bounce-back week for The Dykes of Hazard, taking down Curious George 131.72–117.74. Kenneth Walker III was an absolute monster with 36.8 points, and Dohnte Meyers added 18.3. Chicago's defense chipped in 15, giving this lineup a nice boost across the board. Moving up one spot after a convincing win, the Dykes are quietly putting together a solid season. Keep an eye on this team."
+	    },
+	    {
+	      rank: 5,
+	      previousRank: 4,
+	      team: 'Slim Pickens',
+	      commentary: "Slim put up a respectable 132.96, but unfortunately ran into a Toledo team that had an answer for everything. CeeDee Lamb delivered 30 points, while the Rams defense added 16 and Rhamondre Stevenson chipped in 14.8. This was hardly a bad week, but taking a loss despite clearing 130 is frustrating. Slim drops one spot, but the roster still has enough firepower to make a run."
+	    },
+	    {
+	      rank: 6,
+	      previousRank: 6,
+	      team: 'Baumy1220',
+	      commentary: "Another week, another loss for Baumy, this time falling to Thoy's 150-point explosion. Caleb Williams led the way with 17.76, while Rome Odunze and Chuba Hubbard both contributed solid performances. The problem is that this lineup simply couldn't keep pace with one of the league's hottest teams. Baumy stays at six for now, but the pressure is building to turn these close-to-average weeks into actual wins."
+	    },
+	    {
+	      rank: 7,
+	      previousRank: 8,
+	      team: 'The Toledo Whiteskins',
+	      commentary: "TOLEDO IS HEATING UP. A 152.12-point explosion against Slim Pickens, led by 28.6 from Christian Watson, 23.7 from Christian McCaffrey, and 20.8 from Brock Bowers. That's a pretty terrifying trio when they're all clicking at once. This was one of the strongest performances of the week, and Toledo moves up a spot as a result. At 6–3, this team is making a serious case that it belongs in the upper tier."
+	    },
+	    {
+	      rank: 8,
+	      previousRank: 7,
+	      team: 'Tax Evasion',
+	      commentary: "A tough one for Tax Evasion, losing a close matchup to Ja'Marr Chase Little Kids by just 6.04 points. Luther Burden III led the team with 17.7, and Travis Kelce added 16.8, but there just wasn't enough production to get over the line. Losing a matchup this close is never fun, especially when the opponent doesn't exactly blow the doors off. Tax drops one spot and will need a stronger showing next week."
+	    },
+	    {
+	      rank: 9,
+	      previousRank: 9,
+	      team: 'The Fighting Lil Jonahs',
+	      commentary: "The defending champs ran into a buzzsaw this week. Bijan Robinson did everything he could with 27.7 points, but 156.98 from Connor was simply too much to overcome. Bo Nix added 17.18 and Parker Washington chipped in 14.7, but the supporting cast couldn't keep up with the top of the lineup. The Fighting Lil Jonahs remain ninth, and the road back to the top is getting increasingly difficult."
+	    },
+	    {
+	      rank: 10,
+	      previousRank: 10,
+	      team: 'Curious George',
+	      commentary: "Joe Burrow did his part, putting up an impressive 29.54 points, but it wasn't enough to get past The Dykes of Hazard. Amon-Ra St. Brown and Nico Collins both contributed solid performances, yet the team came up short 131.72–117.74. This roster has shown it can put up points, but the wins just aren't following. Curious George stays tenth, and time is running out to make a meaningful push."
+	    },
+	    {
+	      rank: 11,
+	      previousRank: 11,
+	      team: '(Maye) B Win 2?',
+	      commentary: "A win is a win, but 96.56 points isn't exactly going to scare anybody. Drake Maye led the way with 21.76, while Denzel Boston added 14.3. The good news is that this team managed to take down #1 Woman Respector, 96.56–85.36. The bad news is that the overall production remains underwhelming. There's still time to turn things around, but this roster needs more than a narrow win over the team at the bottom."
+	    },
+	    {
+	      rank: 12,
+	      previousRank: 12,
+	      team: '#1 Woman Respector',
+	      commentary: "ANOTHER WEEK, ANOTHER DISAPPOINTMENT. The Respector managed just 85.36 points against (Maye) B Win 2?, making this one of the lowest-scoring performances of the week. Josh Allen put up 14.86, Breece Hall added 12.7, and Seattle's defense chipped in 12, but the rest of the lineup offered very little. Losing to a team sitting eleventh is a tough look, especially when you only manage 85 points. The name promises number one; the scoreboard is telling a very different story."
+	    }
+	  ]
+	},
+]
 };
